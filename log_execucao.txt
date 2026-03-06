@@ -1,0 +1,126 @@
+[02/03/2026 08:18:28] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/03/2026 08:18:30] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/03/2026 08:18:47] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/03/2026 08:18:47] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/03/2026 12:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/03/2026 12:00:07] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[02/03/2026 12:00:29] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/03/2026 12:00:29] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/03/2026 17:00:05] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[02/03/2026 17:00:30] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/03/2026 17:00:30] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[02/03/2026 17:00:30] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/03/2026 17:01:42] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/03/2026 17:01:44] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/03/2026 17:02:12] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/03/2026 17:02:12] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[02/03/2026 17:02:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[03/03/2026 08:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[03/03/2026 08:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[03/03/2026 08:00:23] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[03/03/2026 08:00:23] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[03/03/2026 08:00:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[03/03/2026 12:00:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[03/03/2026 12:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[03/03/2026 12:00:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[03/03/2026 12:00:41] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[03/03/2026 12:00:41] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[03/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[03/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[03/03/2026 17:00:27] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[03/03/2026 17:00:27] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[03/03/2026 17:00:27] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[03/03/2026 17:07:30] --- INICIANDO EXECUÇÃO DO BOT ---
+[03/03/2026 17:07:31] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[03/03/2026 17:07:57] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[03/03/2026 17:07:57] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_C.Custo.sql'
+[03/03/2026 17:07:57] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[03/03/2026 17:16:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[03/03/2026 17:16:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[03/03/2026 17:16:26] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[03/03/2026 17:16:26] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[03/03/2026 17:16:26] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 08:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 08:03:16] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 08:03:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 08:03:39] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 12:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 12:00:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 12:00:42] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 12:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 17:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:00:24] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 17:00:25] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:00:25] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 17:27:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 17:27:18] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[04/03/2026 17:27:27] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 17:27:28] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:27:45] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 17:27:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:27:45] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 17:28:46] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 17:28:47] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:29:16] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 17:29:17] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:29:17] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[04/03/2026 17:33:41] --- INICIANDO EXECUÇÃO DO BOT ---
+[04/03/2026 17:33:42] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:34:16] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[04/03/2026 17:34:16] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[04/03/2026 17:34:16] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[05/03/2026 08:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[05/03/2026 08:00:06] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[05/03/2026 08:00:25] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[05/03/2026 08:00:25] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[05/03/2026 08:00:25] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[05/03/2026 08:33:48] --- INICIANDO EXECUÇÃO DO BOT ---
+[05/03/2026 08:33:49] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[05/03/2026 08:34:08] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[05/03/2026 08:34:08] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[05/03/2026 08:34:08] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[05/03/2026 12:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[05/03/2026 12:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[05/03/2026 12:00:40] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[05/03/2026 12:00:42] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[05/03/2026 12:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[05/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[05/03/2026 17:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[05/03/2026 17:00:21] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[05/03/2026 17:00:22] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[05/03/2026 17:00:22] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/03/2026 08:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/03/2026 08:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/03/2026 08:00:23] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[06/03/2026 08:00:23] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/03/2026 08:00:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/03/2026 12:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/03/2026 12:00:35] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[06/03/2026 12:00:35] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/03/2026 12:00:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+

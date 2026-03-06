@@ -222,11 +222,12 @@ if arquivo_unico:
 
         # COMPASA por RECNO
         with col_comp:
-            st.markdown(f"**Últimos 10 cadastros - COMPASA**")
+            st.markdown(f"**Últimos 50 cadastros - COMPASA**")
             if "RECNO_COMPASA" in df_base_ultimos.columns:
                 df_base_ultimos['RECNO_NUM_COMPASA'] = pd.to_numeric(df_base_ultimos['RECNO_COMPASA'], errors='coerce')
                 
-                ultimos_comp = df_base_ultimos.sort_values(by="RECNO_NUM_COMPASA", ascending=False).head(10)
+                ultimos_comp = df_base_ultimos.sort_values(by="RECNO_NUM_COMPASA", ascending=False).head(50)
+                
                 ultimos_comp = ultimos_comp.sort_values(by="RECNO_NUM_COMPASA", ascending=True)
                 
                 cols_comp = [c for c in ['COD_COMPASA', 'DESC_COMPASA', 'RECNO_COMPASA'] if c in ultimos_comp.columns]
@@ -242,11 +243,11 @@ if arquivo_unico:
 
         # RONCADOR por RECNO
         with col_ronc:
-            st.markdown(f"**Últimos 10 cadastros - RONCADOR**")
+            st.markdown(f"**Últimos 50 cadastros - RONCADOR**")
             if "RECNO_RONCADOR" in df_base_ultimos.columns:
                 df_base_ultimos['RECNO_NUM_RONCADOR'] = pd.to_numeric(df_base_ultimos['RECNO_RONCADOR'], errors='coerce')
                 
-                ultimos_ronc = df_base_ultimos.sort_values(by="RECNO_NUM_RONCADOR", ascending=False).head(10)
+                ultimos_ronc = df_base_ultimos.sort_values(by="RECNO_NUM_RONCADOR", ascending=False).head(50)
                 ultimos_ronc = ultimos_ronc.sort_values(by="RECNO_NUM_RONCADOR", ascending=True)
                 
                 cols_ronc = [c for c in ['COD_RONCADOR', 'DESC_RONCADOR', 'RECNO_RONCADOR'] if c in ultimos_ronc.columns]
@@ -287,7 +288,7 @@ if arquivo_unico:
         
         prox_comp = calcular_proximo_codigo_por_recno(df_base_ultimos, col_cod_compasa, 'RECNO_COMPASA', prefixo_codigo, tamanho_padrao) if col_cod_compasa else "N/A"
 
-        st.success(f"✅ **Próximo código disponível para cadastro de {tipo_ultimos} (Baseado na COMPASA):**\n\n**{prox_comp}**")
+        st.success(f"✅ **Próximo código disponível para cadastro de {tipo_ultimos}:**\n\n**{prox_comp}**")
 
 else:
     st.info("Faz o upload do arquivo ali na barra lateral pra começar.")
