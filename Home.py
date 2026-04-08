@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Caminhos separados pra não dar merda
+# Caminhos
 IMG_DIR = r"C:\Users\gabriel.silva\VS Code\Dashboard"
 EXCEL_DIR = r"C:\Users\gabriel.silva\VS Code\Dashboard\pages"
 CAMINHO_ONEDRIVE = r"C:\Users\gabriel.silva\OneDrive - compasa.com.br\QSMS - Administrativo - Área de Cadastros\Controle Cadastros.xlsx"
@@ -23,14 +23,18 @@ def carregar_imagem_base64(nome_arquivo):
             return base64.b64encode(f.read()).decode()
     return ""
 
-# Função pra ler a planilha no caminho novo
+# Função pra ler a planilha
 def analisar_planilha(nome_arquivo, aba=0): 
     caminho = os.path.join(EXCEL_DIR, nome_arquivo)
     if os.path.exists(caminho):
         try:
-            # Agora usamos a variável 'aba' aqui dentro
-            df = pd.read_excel(caminho, sheet_name=aba) 
-            total_linhas = len(df)
+            # Verifica se foi passada uma lista de abas para somar
+            if isinstance(aba, list):
+                dfs = pd.read_excel(caminho, sheet_name=aba)
+                total_linhas = sum(len(df) for df in dfs.values())
+            else:
+                df = pd.read_excel(caminho, sheet_name=aba) 
+                total_linhas = len(df)
             
             timestamp = os.path.getmtime(caminho)
             data_atualizacao = datetime.fromtimestamp(timestamp).strftime('%d/%m/%Y %H:%M')
@@ -46,11 +50,29 @@ img_aprovadores = carregar_imagem_base64("Aprovadores logo.png")
 img_roncador = carregar_imagem_base64("Roncador logo.png") 
 img_ccusto = carregar_imagem_base64("C.Custo logo.png") 
 img_fornecedores = carregar_imagem_base64("Fornecedores logo.png")  
-linhas_aprov, data_aprov = analisar_planilha("Aprovadores.xlsx")
+
+linhas_aprov, data_aprov = analisar_planilha("Aprovadores.xlsx", aba=["Plan1", "Form"])
 linhas_ronc, data_ronc = analisar_planilha("Roncador.xlsx")
 linhas_ccusto, data_ccusto = analisar_planilha("Aprovadores.xlsx", aba="Plan2")
 
-# Cabeçalho - Maior e Centralizado
+try:
+    df_fornec = pd.read_excel(CAMINHO_ONEDRIVE, sheet_name="Alt_Att Fornec")
+    linhas_fornecedores = f"~{len(df_fornec)}"
+    timestamp_fornec = os.path.getmtime(CAMINHO_ONEDRIVE)
+    data_fornecedores = datetime.fromtimestamp(timestamp_fornec).strftime('%d/%m/%Y %H:%M')
+except Exception as e:
+    linhas_fornecedores, data_fornecedores = "~0", "Erro no OneDrive"
+
+# Lógica de Cor dos números
+def cor_alerta(valor):
+    return "#FF3333" if str(valor).strip() in ["~0", "0"] else "inherit"
+
+cor_aprov = cor_alerta(linhas_aprov)
+cor_ronc = cor_alerta(linhas_ronc)
+cor_ccusto = cor_alerta(linhas_ccusto)
+cor_fornec = cor_alerta(linhas_fornecedores)
+
+# Cabeçalho
 html_cabecalho = f"""
 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
     <img src="data:image/png;base64,{img_portal}" style="width: 80px; height: 80px; margin-right: 15px;">
@@ -60,18 +82,23 @@ html_cabecalho = f"""
 st.markdown(html_cabecalho, unsafe_allow_html=True)
 st.write("---")
 
-# Status com o verde no Operacional
-st.markdown("**Status do Portal:** <span style='color: #32CD32; font-weight: bold;'>Operacional</span> • Todos os pipelines de dados atualizados", unsafe_allow_html=True)
+# --- LÓGICA DO STATUS GERAL ---
+# Se qualquer um dos pipelines retornar ~0, a gente avisa que deu merda
+pipelines_zerados = any(str(val).strip() in ["~0", "0"] for val in [linhas_aprov, linhas_ronc, linhas_ccusto, linhas_fornecedores])
+
+if pipelines_zerados:
+    status_texto = "Um ou mais módulos estão inoperantes"
+    status_cor = "#FF3333"
+    status_msg_secundaria = "Verifique falhas na leitura ou bases vazias"
+else:
+    status_texto = "Operacional"
+    status_cor = "#32CD32"
+    status_msg_secundaria = "Todos os pipelines de dados atualizados"
+
+st.markdown(f"**Status do Portal:** <span style='color: {status_cor}; font-weight: bold;'>{status_texto}</span> • {status_msg_secundaria}", unsafe_allow_html=True)
 st.markdown("<br>", unsafe_allow_html=True)
 
-try:
-    df_fornec = pd.read_excel(CAMINHO_ONEDRIVE, sheet_name="Alt_Att Fornec")
-    linhas_fornecedores = f"~{len(df_fornec)}"
-    timestamp_fornec = os.path.getmtime(CAMINHO_ONEDRIVE)
-    data_fornecedores = datetime.fromtimestamp(timestamp_fornec).strftime('%d/%m/%Y %H:%M')
-except Exception as e:
-    linhas_fornecedores, data_fornecedores = "~0", "Erro no OneDrive"
-# Caixas com relevo, transparência e cursor indicando clique
+# Estilo da caixa
 estilo_caixa = """
     background-color: rgba(128, 128, 128, 0.1); 
     padding: 20px; 
@@ -95,7 +122,7 @@ html_aprovadores = f"""
             </div>
         </div>
         <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold;">Total de Regras: {linhas_aprov}</p>
+            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_aprov};">Total de Regras: {linhas_aprov}</p>
             <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_aprov}</p>
         </div>
     </div>
@@ -115,7 +142,7 @@ html_roncador = f"""
             </div>
         </div>
         <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold;">Total de Registros: {linhas_ronc}</p>
+            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_ronc};">Total de Registros: {linhas_ronc}</p>
             <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_ronc}</p>
         </div>
     </div>
@@ -135,13 +162,12 @@ html_ccusto = f"""
             </div>
         </div>
         <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold;">Total de Registros: {linhas_ccusto}</p>
+            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_ccusto};">Total de Registros: {linhas_ccusto}</p>
             <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_ccusto}</p>
         </div>
     </div>
 </a>
 """
-
 st.markdown(html_ccusto, unsafe_allow_html=True)
 
 # Cartão: Fornecedores
@@ -156,11 +182,10 @@ html_fornecedores = f"""
             </div>
         </div>
         <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold;">Total de Registros: {linhas_fornecedores}</p>
+            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_fornec};">Total de Registros: {linhas_fornecedores}</p>
             <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_fornecedores}</p>
         </div>
     </div>
 </a>
 """
-
 st.markdown(html_fornecedores, unsafe_allow_html=True)

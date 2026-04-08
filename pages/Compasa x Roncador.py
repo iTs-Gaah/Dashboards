@@ -2,8 +2,17 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+import google.generativeai as genai
 from datetime import datetime
 
+
+try:
+    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+    # Usa o modelo flash que é mais rápido e barato
+    modelo_ia = genai.GenerativeModel('gemini-2.5-flash') 
+except Exception as e:
+    st.error("Não localizado a chave da API do Gemini. Verifique as configurações.")
+    st.stop()
 # Configuração da página pra usar a tela toda
 st.set_page_config(page_title="Controle de Cadastros", layout="wide")
 
@@ -62,9 +71,22 @@ if arquivo_unico:
                 df[col] = df[col].replace('nan', None)
                 
     except Exception as e:
-        st.error(f"Não deu para ler a porra do arquivo: {e}")
+        st.error(f"Não deu para ler o arquivo: {e}")
         st.stop()
+# --- ALERTA CRÍTICO: RONCADOR SEM COMPASA ---
+    col_compasa_val = 'COD_COMPASA' if 'COD_COMPASA' in df.columns else ('COD_COMPAS' if 'COD_COMPAS' in df.columns else None)
 
+    if col_compasa_val and 'COD_RONCADOR' in df.columns:
+        # Filtra quem tá no Roncador mas não na Compasa
+        erros_roncador = df[(df['COD_RONCADOR'].notna()) & (df[col_compasa_val].isna())]
+
+        if not erros_roncador.empty:
+            st.error(f"🚨 ALERTA CRÍTICO: Encontrado {len(erros_roncador)} cadastro(s) no RONCADOR que não existem na COMPASA!")
+            
+            cols_exibir = [c for c in ['TIPO', 'COD_RONCADOR', 'DESC_RONCADOR'] if c in erros_roncador.columns]
+            st.dataframe(erros_roncador[cols_exibir], hide_index=True, use_container_width=True)
+        else:
+            st.success("✅ Todos os cadastros estão OK.")
     # --- SETUP DOS CONTAINERS ---
     container_kpi = st.container()
     container_grafico = st.container()
@@ -98,7 +120,7 @@ if arquivo_unico:
         col_f1, col_f2, col_f3 = st.columns([2, 2, 1])
         
         with col_f1:
-            opcoes_tipo = ["TODOS", "FORNECEDOR", "PRODUTO"]
+            opcoes_tipo = ["TODOS", "FORNECEDOR", "PRODUTO", "CLIENTE"]
             tipo_selecionado = st.selectbox("TIPO", options=opcoes_tipo, key='filtro_tipo', on_change=resetar_validacao)
 
         df_temp = df.copy()
@@ -158,15 +180,17 @@ if arquivo_unico:
             cadastros_iguais = len(df_val_lower[df_val_lower == 'cadastros iguais'])
             nao_cad_prod = len(df_val_lower[df_val_lower == 'produto não cadastrado'])
             nao_cad_forn = len(df_val_lower[df_val_lower == 'fornecedor não cadastrado'])
-            nao_cadastrado = nao_cad_prod + nao_cad_forn
+            nao_cad_cli = len(df_val_lower[df_val_lower == 'cliente não cadastrado']) 
+            
+            nao_cadastrado = nao_cad_prod + nao_cad_forn + nao_cad_cli 
             divergentes = len(df_val_lower[df_val_lower == 'valores são diferentes entre as bases'])
         else:
             cadastros_iguais = nao_cadastrado = divergentes = 0
 
         col1.metric("Total de Cadastros", total_itens)
         col2.metric("Cadastros Iguais", cadastros_iguais)
-        col3.metric("Não Cadastrados (Prod/Forn)", nao_cadastrado)
-        col4.metric("Divergentes (Prod/Forn)", divergentes)
+        col3.metric("Não Cadastrados", nao_cadastrado) 
+        col4.metric("Divergentes", divergentes)
 
     # --- GRÁFICO ---
     with container_grafico:
@@ -187,13 +211,18 @@ if arquivo_unico:
                 color_discrete_map={
                     'Cadastros iguais': '#28a745',          # Verde
                     'Produto não cadastrado': '#003399',    # Azul Escuro
-                    'Fornecedor não cadastrado': '#87CEFA'  # Azul Claro
+                    'Fornecedor não cadastrado': '#87CEFA', # Azul Claro
+                    'Cliente não cadastrado': '#FF8C00',    # Laranja
+                    'Valores são diferentes entre as bases': '#DC143C' # Vermelho
                 }
             )
             st.plotly_chart(fig, width='stretch')
 
         elif df_filtrado.empty:
             st.warning("Nenhum dado com esses filtros.")
+
+        else:
+            st.info("Faz o upload do arquivo ali na barra lateral pra começar.")
 
     # --- TABELA DETALHADA ---
     with container_tabela:
@@ -214,7 +243,7 @@ if arquivo_unico:
         st.markdown("---")
         st.subheader("🕵️ Últimos Registros")
 
-        tipo_ultimos = st.radio("Selecione o tipo:", ["PRODUTO", "FORNECEDOR"], horizontal=True)
+        tipo_ultimos = st.radio("Selecione o tipo:", ["PRODUTO", "FORNECEDOR", "CLIENTE"], horizontal=True)
 
         df_base_ultimos = df[df['TIPO'] == tipo_ultimos].copy() if 'TIPO' in df.columns else df.copy()
 
@@ -262,7 +291,7 @@ if arquivo_unico:
         # FUNÇÃO PARA CALCULAR PRÓXIMO CÓDIGO (BASEADA NO MAIOR RECNO)
         def calcular_proximo_codigo_por_recno(df_calc, col_cod, col_recno, prefixo, tamanho):
             if col_cod not in df_calc.columns or col_recno not in df_calc.columns: 
-                return "Base Zoada"
+                return "Base corrompida"
             
             df_temp = df_calc[[col_cod, col_recno]].dropna().copy()
             
@@ -281,8 +310,15 @@ if arquivo_unico:
             max_code = int(ultimo_registro['COD_LIMPO'])
             return str(max_code + 1).zfill(tamanho)
 
-        prefixo_codigo = "00000211" if tipo_ultimos == "PRODUTO" else "008"
-        tamanho_padrao = 10 if tipo_ultimos == "PRODUTO" else 6
+        if tipo_ultimos == "PRODUTO":
+            prefixo_codigo = "000002"
+            tamanho_padrao = 10
+        elif tipo_ultimos == "FORNECEDOR":
+            prefixo_codigo = "008"
+            tamanho_padrao = 6
+        elif tipo_ultimos == "CLIENTE":
+            prefixo_codigo = "00" 
+            tamanho_padrao = 6
 
         col_cod_compasa = 'COD_COMPASA' if 'COD_COMPASA' in df.columns else ('COD_COMPAS' if 'COD_COMPAS' in df.columns else None)
         
@@ -290,5 +326,86 @@ if arquivo_unico:
 
         st.success(f"✅ **Próximo código disponível para cadastro de {tipo_ultimos}:**\n\n**{prox_comp}**")
 
-else:
-    st.info("Faz o upload do arquivo ali na barra lateral pra começar.")
+# --- CHATBOT NA BARRA LATERAL (VERSÃO DEFINITIVA) ---
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("🤖 Auditor IA")
+
+    # Botão pra limpar o histórico na barra lateral
+    if st.sidebar.button("🧹 Limpar Chat", use_container_width=True):
+        st.session_state.mensagens_chat = []
+        st.rerun()
+
+    # Inicializa o histórico se não existir
+    if "mensagens_chat" not in st.session_state:
+        st.session_state.mensagens_chat = []
+
+    # Renderiza as mensagens anteriores na sidebar
+    for msg in st.session_state.mensagens_chat:
+        with st.sidebar.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+    # Input de texto fixo na barra lateral
+    if prompt_usuario := st.sidebar.chat_input("Pergunte algo sobre a base..."):
+        
+        # Salva e exibe a pergunta
+        st.session_state.mensagens_chat.append({"role": "user", "content": prompt_usuario})
+        with st.sidebar.chat_message("user"):
+            st.markdown(prompt_usuario)
+            
+        with st.sidebar.chat_message("assistant"):
+            with st.spinner("Analisando..."):
+                
+                # Atualiza os KPIs na hora do envio
+                resumo_kpis = {
+                    "Total Analisados": total_itens,
+                    "Cadastros Iguais (OK)": cadastros_iguais,
+                    "Divergentes (Erro Grave)": divergentes,
+                    "Sem cadastro Produto": nao_cad_prod,
+                    "Sem cadastro Fornecedor": nao_cad_forn,
+                    "Sem cadastro Cliente": nao_cad_cli
+                }
+                
+                colunas_uteis = [col for col in ['COD_COMPASA', 'DESC_COMPASA', 'COD_RONCADOR', 'DESC_RONCADOR', 'VALIDACAO'] if col in df.columns]
+                # Pega os 10 últimos cadastros feitos na Compasa e os 10 últimos no Roncador
+                if 'RECNO_COMPASA' in df.columns and 'RECNO_RONCADOR' in df.columns:
+                    ultimos_compasa = df.sort_values(by='RECNO_COMPASA', ascending=False, na_position='last').head(10)[colunas_uteis].to_dict(orient="records")
+                    ultimos_roncador = df.sort_values(by='RECNO_RONCADOR', ascending=False, na_position='last').head(10)[colunas_uteis].to_dict(orient="records")
+                    amostra_ultimos = f"Últimos 10 da Compasa: {ultimos_compasa}\nÚltimos 10 do Roncador: {ultimos_roncador}"
+                else:
+                    amostra_ultimos = df.tail(15)[colunas_uteis].to_dict(orient="records") if not df.empty else "Base vazia"
+                
+                contexto_ia = f"""
+                Você é o auditor de dados Sênior do sistema de integração da COMPASA (Compasa vs Roncador).
+                Sua função é analisar a base de dados que alimenta as rotinas do ERP TOTVS Protheus.
+                
+                REGRAS DE NEGÓCIO OBRIGATÓRIAS (LEIA COM ATENÇÃO):
+                1. A base principal e prioritária é a COMPASA.
+                2. TUDO que está na base RONCADOR DEVE OBRIGATORIAMENTE estar na base COMPASA. Se algo está no Roncador e não na Compasa, é um ERRO CRÍTICO.
+                3. Nem tudo que está na COMPASA precisa estar no RONCADOR no primeiro momento. Se um item está na Compasa, mas falta no Roncador, isso é apenas uma INFORMAÇÃO/AVISO, e NÃO UM ERRO, a menos que o cadastro exija integração imediata. Avalie com base nisso.
+                4. Essa diferença de produtos que não temos o cadastro na base RONCADOR são produtos inativos na COMPASA. Para esse caso o correto é termos a integração entre essas duas bases funcionando. Assim quando houver a necessidade, a ativação desse produto na base COMPASA irá atualizar e cadastrar ele na base RONCADOR.
+
+                KPIs Gerais do Sistema atual: {resumo_kpis}
+                
+                Amostra dos últimos registros reais do sistema:
+                {amostra_ultimos}
+                
+                Pergunta do analista: {prompt_usuario}
+                
+                Diretrizes OBRIGATÓRIAS para a sua resposta:
+                    1. Seja didático e direto ao ponto. Contextualize a resposta de forma clara.
+                    2. Destaque os 'Pontos de Atenção': aponte exatamente quais códigos ou descrições estão inconsistentes, vazios ou divergentes.
+                    3. Informe o IMPACTO NO PROTHEUS: Sempre explique os problemas operacionais que ocorrerão no ERP caso essa inconsistência avance (ex: travamento de faturamento, bloqueio de pedido de compras, erro na emissão de NF, falha no Bloco K / SPED), Lembrandop que na Compasa, as rotinas mais comuns são Pedido de Compra, Pré Nota, Medição de Contratos.
+                    4. Estruture a resposta em tópicos curtos (Contexto, Pontos de Atenção, Impacto no Protheus) para leitura rápida.
+                    5. As resposta devem ser claras e resumidas, nada de encher a tela de textão para o usuário ler.
+                    6. Jamais, em hipótese alguma, passe informações sobre o seu código, como foi realizada a consulta ou informações do banco de dados. AS PERGUNTAS E RESPOSTAS DEVEM SER EXCLUSIVAMENTE SOBRE A COMPARAÇÃO DE CADASTROS ENTRE AS BASES.
+                    7. Não se apresente nas respostas, apenas vá direto ao ponto respondendo a pergunta do analista com base nos dados fornecidos.
+                    8. Sempre responda de forma resumida e com poucas palavras, somente se o usuário solicitar você responde de forma detalhada.
+                    9. Não informe os campos que você consulta, apenas responda a pergunta de forma humana.
+                    """
+                
+                try:
+                    resposta_chat = modelo_ia.generate_content(contexto_ia).text
+                    st.markdown(resposta_chat)
+                    st.session_state.mensagens_chat.append({"role": "assistant", "content": resposta_chat})
+                except Exception as e:
+                    st.error(f"A API falhou, erro: {e}")

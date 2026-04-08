@@ -124,3 +124,1919 @@
 [06/03/2026 12:00:35] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
 [06/03/2026 12:00:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
 
+[06/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/03/2026 17:00:27] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[06/03/2026 17:00:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/03/2026 17:00:30] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 07:51:30] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 07:51:33] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 07:52:08] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 07:52:10] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 07:52:10] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 08:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 08:00:30] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 08:00:31] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 08:00:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 11:33:24] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 11:33:26] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 11:33:44] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 11:33:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 11:33:45] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 11:42:50] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 11:42:51] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 11:43:17] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 11:43:18] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 11:43:18] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 12:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 12:00:29] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 12:00:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 12:00:30] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[09/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[09/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[09/03/2026 17:00:46] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[09/03/2026 17:00:47] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[09/03/2026 17:00:47] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 08:00:12] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 08:00:15] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[10/03/2026 08:00:37] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 08:00:43] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 08:00:43] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 08:02:10] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 08:02:10] ERRO: Deu merda ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[10/03/2026 08:02:29] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 08:02:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 08:02:30] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 12:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[10/03/2026 12:00:35] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 12:00:36] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 12:00:36] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 12:11:20] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 12:11:22] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[10/03/2026 12:11:43] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 12:11:43] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 12:11:43] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 16:45:01] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 16:45:01] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[10/03/2026 16:45:19] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 16:45:20] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 16:45:20] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[10/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[10/03/2026 17:00:04] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[10/03/2026 17:00:45] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[10/03/2026 17:00:46] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[10/03/2026 17:00:46] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:00:23] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:00:23] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:00:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:36:31] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:36:32] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:36:49] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:36:50] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:36:50] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_Form.sql'
+[11/03/2026 08:36:50] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:39:14] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:39:15] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:39:38] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:39:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:39:39] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: [Errno 2] No such file or directory: 'Consult_Form.sql'
+[11/03/2026 08:39:39] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:40:24] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:40:25] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:40:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:40:41] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:40:41] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: %d format: a real number is required, not dict
+[11/03/2026 08:40:41] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:43:37] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:43:38] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:43:54] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:43:55] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:43:56] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 08:43:56] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 08:50:38] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 08:50:39] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:51:14] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 08:51:15] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 08:51:17] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 08:51:17] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:21:47] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:21:48] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:22:09] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:22:09] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:22:11] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:22:11] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:30:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:30:18] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:30:44] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:30:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:30:54] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:30:54] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:32:58] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:32:59] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:33:22] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:33:23] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:33:23] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:33:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:39:28] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:39:32] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:39:54] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:39:55] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:39:56] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:39:56] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:41:29] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:41:30] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:41:51] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:41:52] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:41:53] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:41:53] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 10:54:30] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 10:54:31] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:54:51] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 10:54:52] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 10:54:52] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 10:54:52] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 11:15:56] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 11:15:57] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 11:16:20] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 11:16:20] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: Execution failed on sql 'SELECT
+    CASE EMPRESA
+        WHEN 'COMPASA DO BRASIL' THEN '01'
+        WHEN 'CLL - COMPASA LOGISTICA LTDA' THEN '02'
+        WHEN 'CONSORCIO COMPASA - GAISSLER' THEN '03'
+        WHEN 'COMPASA - BR-INFRA | RDC4' THEN '04'
+        WHEN 'COMPASA - BR-INFRA | RDC6' THEN '05'
+        WHEN 'ATS ASFALTOS TECNOLOGIA E SERVIÇOS LTDA' THEN '06'
+        WHEN 'CONSORCIO CONSTRUTOR PR-323' THEN '07'
+        WHEN 'CONSORCIO CONSTRUTOR CONSERVA-PR' THEN '08'
+        WHEN 'VALE DAS PEDRAS' THEN '09'
+        WHEN 'CONSORCIO RONCADOR' THEN '10'
+        ELSE EMPRESA
+    END AS 'CTT_EMPRESA',
+    CASE 
+        WHEN TRIM(CTT_FILIAL) = '01' THEN '010101'  AND TRIM(CTT_CUSTO) = '60101103' THEN '010102'
+        WHEN TRIM(CTT_FILIAL) = '02' THEN '020101'
+        WHEN TRIM(CTT_FILIAL) = '03' THEN '030101'
+        WHEN TRIM(CTT_FILIAL) = '04' THEN '040101'
+        WHEN TRIM(CTT_FILIAL) = '05' THEN '050101'
+        WHEN TRIM(CTT_FILIAL) = '06' THEN '060101'
+        WHEN TRIM(CTT_FILIAL) = '07' THEN '070101'
+        WHEN TRIM(CTT_FILIAL) = '08' THEN '080101'
+        WHEN TRIM(CTT_FILIAL) = '09' THEN '090101'
+        WHEN TRIM(CTT_FILIAL) = '10' THEN '100101'
+        WHEN TRIM(CTT_FILIAL) = '11' THEN '110101'
+        WHEN TRIM(CTT_FILIAL) = '12' THEN '120101'
+        WHEN TRIM(CTT_FILIAL) = '13' THEN '130101'
+        ELSE CTT_FILIAL
+    END AS CTT_FILIAL,
+    CTT_CUSTO,
+    CTT_DESC01,
+    CASE
+        WHEN CTT_BLOQ = '2' THEN 'ATIVO' 
+        ELSE 'INATIVO' 
+    END AS 'CTT_BLOQ',
+    CTT_XFINAN,
+    CTT_REGION
+FROM CTT_CADASTRO_CENTRO_CUSTO
+WHERE D_E_L_E_T_ <> '*'
+AND LENGTH(TRIM(CTT_CUSTO)) = 8;': (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'THEN '010102'\n        WHEN TRIM(CTT_FILIAL) = '02' THEN '020101'\n        WHEN TR' at line 16")
+[SQL: SELECT
+    CASE EMPRESA
+        WHEN 'COMPASA DO BRASIL' THEN '01'
+        WHEN 'CLL - COMPASA LOGISTICA LTDA' THEN '02'
+        WHEN 'CONSORCIO COMPASA - GAISSLER' THEN '03'
+        WHEN 'COMPASA - BR-INFRA | RDC4' THEN '04'
+        WHEN 'COMPASA - BR-INFRA | RDC6' THEN '05'
+        WHEN 'ATS ASFALTOS TECNOLOGIA E SERVIÇOS LTDA' THEN '06'
+        WHEN 'CONSORCIO CONSTRUTOR PR-323' THEN '07'
+        WHEN 'CONSORCIO CONSTRUTOR CONSERVA-PR' THEN '08'
+        WHEN 'VALE DAS PEDRAS' THEN '09'
+        WHEN 'CONSORCIO RONCADOR' THEN '10'
+        ELSE EMPRESA
+    END AS 'CTT_EMPRESA',
+    CASE 
+        WHEN TRIM(CTT_FILIAL) = '01' THEN '010101'  AND TRIM(CTT_CUSTO) = '60101103' THEN '010102'
+        WHEN TRIM(CTT_FILIAL) = '02' THEN '020101'
+        WHEN TRIM(CTT_FILIAL) = '03' THEN '030101'
+        WHEN TRIM(CTT_FILIAL) = '04' THEN '040101'
+        WHEN TRIM(CTT_FILIAL) = '05' THEN '050101'
+        WHEN TRIM(CTT_FILIAL) = '06' THEN '060101'
+        WHEN TRIM(CTT_FILIAL) = '07' THEN '070101'
+        WHEN TRIM(CTT_FILIAL) = '08' THEN '080101'
+        WHEN TRIM(CTT_FILIAL) = '09' THEN '090101'
+        WHEN TRIM(CTT_FILIAL) = '10' THEN '100101'
+        WHEN TRIM(CTT_FILIAL) = '11' THEN '110101'
+        WHEN TRIM(CTT_FILIAL) = '12' THEN '120101'
+        WHEN TRIM(CTT_FILIAL) = '13' THEN '130101'
+        ELSE CTT_FILIAL
+    END AS CTT_FILIAL,
+    CTT_CUSTO,
+    CTT_DESC01,
+    CASE
+        WHEN CTT_BLOQ = '2' THEN 'ATIVO' 
+        ELSE 'INATIVO' 
+    END AS 'CTT_BLOQ',
+    CTT_XFINAN,
+    CTT_REGION
+FROM CTT_CADASTRO_CENTRO_CUSTO
+WHERE D_E_L_E_T_ <> '*'
+AND LENGTH(TRIM(CTT_CUSTO)) = 8;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[11/03/2026 11:16:21] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 11:16:21] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 12:00:13] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 12:00:15] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 12:00:50] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 12:01:35] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 12:01:36] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 12:01:36] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 12:10:24] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 12:10:25] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 12:10:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 12:10:41] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 12:10:44] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 12:10:44] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 14:04:31] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 14:04:32] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 14:04:45] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 14:04:46] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 14:04:46] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 14:04:46] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 15:27:33] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 15:27:34] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 15:27:55] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 15:27:56] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 15:27:56] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 15:27:56] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[11/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[11/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[11/03/2026 17:00:27] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[11/03/2026 17:00:27] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[11/03/2026 17:00:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[11/03/2026 17:00:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[12/03/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[12/03/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[12/03/2026 08:00:36] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[12/03/2026 08:00:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[12/03/2026 08:00:41] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[12/03/2026 08:00:41] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[12/03/2026 08:22:32] --- INICIANDO EXECUÇÃO DO BOT ---
+[12/03/2026 08:22:33] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[12/03/2026 08:22:51] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[12/03/2026 08:22:52] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[12/03/2026 08:22:54] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[12/03/2026 08:22:54] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[12/03/2026 12:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[12/03/2026 12:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[12/03/2026 12:00:34] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[12/03/2026 12:00:35] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[12/03/2026 12:00:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[12/03/2026 12:00:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[12/03/2026 14:16:27] --- INICIANDO EXECUÇÃO DO BOT ---
+[12/03/2026 14:16:29] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[12/03/2026 14:17:15] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[12/03/2026 14:17:16] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[12/03/2026 14:17:17] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[12/03/2026 14:17:17] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[12/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[12/03/2026 17:00:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[12/03/2026 17:00:04] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[12/03/2026 17:00:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[12/03/2026 17:00:05] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[12/03/2026 17:00:05] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 08:00:05] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 08:00:05] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 08:00:05] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 08:00:05] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 08:00:05] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 09:13:14] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 09:13:14] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:13:14] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:13:14] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:13:14] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:13:14] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 09:17:28] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 09:17:28] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:17:28] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:17:28] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:17:28] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[13/03/2026 09:17:28] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 09:45:16] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 09:45:17] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[13/03/2026 09:45:37] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[13/03/2026 09:45:38] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[13/03/2026 09:45:39] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[13/03/2026 09:45:39] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 12:00:10] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 12:00:13] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[13/03/2026 12:00:34] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[13/03/2026 12:00:36] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[13/03/2026 12:00:37] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[13/03/2026 12:00:37] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 14:28:30] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 14:28:31] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[13/03/2026 14:28:52] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[13/03/2026 14:28:53] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[13/03/2026 14:28:53] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[13/03/2026 14:28:53] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[13/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[13/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[13/03/2026 17:00:33] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[13/03/2026 17:00:34] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[13/03/2026 17:00:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[13/03/2026 17:00:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 07:57:39] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 07:57:43] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 07:58:05] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 07:58:05] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 07:58:06] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 07:58:06] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 08:00:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 08:00:20] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 08:00:57] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 08:00:58] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 08:01:00] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 08:01:00] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 08:06:19] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 08:06:20] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 08:06:47] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 08:06:48] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 08:06:49] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 08:06:49] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 12:00:16] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 12:00:18] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 12:00:56] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 12:00:57] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 12:01:14] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 12:01:14] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:00:05] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:00:26] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:00:31] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:00:33] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:00:33] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:01:12] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:01:18] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:01:54] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:01:55] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:01:58] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:01:58] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:02:25] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:02:28] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:02:42] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:02:43] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:02:44] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:02:44] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:03:08] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:03:12] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:03:45] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:03:46] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:03:47] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:03:47] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:04:26] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:04:27] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:04:46] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:04:47] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:04:47] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:04:47] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:05:11] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:05:13] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:05:34] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:05:34] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:05:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:05:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[16/03/2026 17:06:37] --- INICIANDO EXECUÇÃO DO BOT ---
+[16/03/2026 17:06:38] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:06:56] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[16/03/2026 17:06:58] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[16/03/2026 17:06:58] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[16/03/2026 17:06:58] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[17/03/2026 08:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[17/03/2026 08:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[17/03/2026 08:00:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[17/03/2026 08:00:41] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[17/03/2026 08:00:42] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[17/03/2026 08:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[17/03/2026 08:15:03] --- INICIANDO EXECUÇÃO DO BOT ---
+[17/03/2026 08:15:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[17/03/2026 08:15:32] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[17/03/2026 08:15:33] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[17/03/2026 08:15:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[17/03/2026 08:15:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[17/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[17/03/2026 12:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[17/03/2026 12:00:48] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[17/03/2026 12:00:50] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[17/03/2026 12:00:51] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[17/03/2026 12:00:51] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[17/03/2026 12:20:58] --- INICIANDO EXECUÇÃO DO BOT ---
+[17/03/2026 12:21:00] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[17/03/2026 12:21:33] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[17/03/2026 12:21:34] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[17/03/2026 12:21:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[17/03/2026 12:21:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[17/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[17/03/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[17/03/2026 17:00:47] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[17/03/2026 17:00:48] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[17/03/2026 17:00:49] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[17/03/2026 17:00:49] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[18/03/2026 08:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[18/03/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[18/03/2026 08:00:59] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[18/03/2026 08:01:00] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[18/03/2026 08:01:12] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[18/03/2026 08:01:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[18/03/2026 12:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[18/03/2026 12:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[18/03/2026 12:01:51] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[18/03/2026 12:01:53] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[18/03/2026 12:01:55] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[18/03/2026 12:01:55] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[18/03/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[18/03/2026 17:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[18/03/2026 17:01:05] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[18/03/2026 17:01:29] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[18/03/2026 17:01:33] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[18/03/2026 17:01:33] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 08:00:05] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[19/03/2026 08:00:05] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[19/03/2026 08:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[19/03/2026 08:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[19/03/2026 08:00:06] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 08:03:33] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 08:03:34] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[19/03/2026 08:03:53] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[19/03/2026 08:03:54] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[19/03/2026 08:03:55] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[19/03/2026 08:03:55] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 12:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[19/03/2026 12:00:40] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[19/03/2026 12:00:41] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[19/03/2026 12:00:42] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[19/03/2026 12:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 13:27:10] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 13:27:11] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[19/03/2026 13:27:30] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[19/03/2026 13:27:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[19/03/2026 13:27:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[19/03/2026 13:27:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 17:00:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[19/03/2026 17:00:28] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[19/03/2026 17:00:31] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[19/03/2026 17:00:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[19/03/2026 17:00:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[19/03/2026 17:17:38] --- INICIANDO EXECUÇÃO DO BOT ---
+[19/03/2026 17:17:41] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[19/03/2026 17:18:11] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[19/03/2026 17:18:12] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[19/03/2026 17:18:13] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[19/03/2026 17:18:13] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 08:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[20/03/2026 08:03:28] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[20/03/2026 08:03:29] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[20/03/2026 08:03:32] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[20/03/2026 08:03:32] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 12:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 12:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 12:00:06] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 12:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 12:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 12:00:06] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 15:01:31] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 15:01:31] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 15:01:31] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 15:01:31] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 15:01:31] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 15:01:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 15:02:11] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 15:02:12] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[20/03/2026 15:02:14] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.0.140' ([WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[20/03/2026 15:02:17] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.0.140' ([WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[20/03/2026 15:02:19] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '192.168.0.140' ([WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[20/03/2026 15:02:19] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 17:00:06] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:00:06] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:00:07] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:00:07] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:00:07] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 17:23:04] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 17:23:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:23:04] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:23:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:23:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:23:04] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[20/03/2026 17:28:44] --- INICIANDO EXECUÇÃO DO BOT ---
+[20/03/2026 17:28:44] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:28:44] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:28:44] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:28:44] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[20/03/2026 17:28:44] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:04:10] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:04:11] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:04:11] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:04:11] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:04:12] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:04:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:08:12] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:08:12] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:08:12] ERRO: Erro ao processar Roncador.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:08:12] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:08:12] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: 'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+[23/03/2026 08:08:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:17:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:17:09] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (1045, "Access denied for user 'QSMS'@'192.168.0.55' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:17:09] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (1045, "Access denied for user 'QSMS'@'192.168.0.55' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:17:09] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (1045, "Access denied for user 'QSMS'@'192.168.0.55' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:17:09] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (1045, "Access denied for user 'QSMS'@'192.168.0.55' (using password: YES)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:17:09] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:19:58] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:19:58] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:19:58] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:19:58] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:19:59] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:19:59] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:22:21] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:22:21] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:21] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:21] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:21] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:21] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:22:40] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:22:40] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:40] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:40] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:40] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:22:40] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:25:32] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:25:32] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:25:32] ERRO: Erro ao processar Roncador.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:25:32] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:25:32] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'saDwQSMS@192.168.0.140' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[23/03/2026 08:25:32] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 08:28:28] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 08:28:30] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[23/03/2026 08:28:47] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[23/03/2026 08:28:47] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[23/03/2026 08:28:48] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[23/03/2026 08:28:48] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 12:00:08] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 12:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[23/03/2026 12:00:34] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[23/03/2026 12:00:34] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[23/03/2026 12:00:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[23/03/2026 12:00:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 13:43:07] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 13:43:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[23/03/2026 13:43:24] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[23/03/2026 13:43:25] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[23/03/2026 13:43:26] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[23/03/2026 13:43:26] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[23/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[23/03/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[23/03/2026 17:00:43] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[23/03/2026 17:00:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[23/03/2026 17:00:48] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[23/03/2026 17:00:48] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[24/03/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[24/03/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[24/03/2026 08:01:40] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[24/03/2026 08:01:41] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[24/03/2026 08:01:41] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[24/03/2026 08:01:41] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[24/03/2026 12:00:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[24/03/2026 12:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[24/03/2026 12:00:32] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[24/03/2026 12:00:32] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[24/03/2026 12:00:33] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[24/03/2026 12:00:33] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[24/03/2026 13:21:59] --- INICIANDO EXECUÇÃO DO BOT ---
+[24/03/2026 13:22:00] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[24/03/2026 13:22:18] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[24/03/2026 13:22:18] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[24/03/2026 13:22:20] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[24/03/2026 13:22:20] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[24/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[24/03/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[24/03/2026 17:00:58] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[24/03/2026 17:01:54] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[24/03/2026 17:03:49] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[24/03/2026 17:03:49] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[24/03/2026 17:13:37] --- INICIANDO EXECUÇÃO DO BOT ---
+[24/03/2026 17:13:39] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[24/03/2026 17:14:11] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[24/03/2026 17:14:11] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[24/03/2026 17:14:12] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[24/03/2026 17:14:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 08:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 08:00:53] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 08:01:11] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 08:01:12] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 08:01:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 08:11:12] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 08:11:14] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 08:11:39] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 08:11:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 08:11:40] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 08:11:40] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 12:00:07] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 12:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 12:00:38] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 12:00:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 12:00:42] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 12:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 15:15:24] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 15:15:25] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 15:15:43] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 15:15:44] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 15:15:44] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 15:15:44] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:21:32] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:21:33] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:21:49] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:21:49] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:21:50] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 16:21:50] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:29:52] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:29:53] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:30:20] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:30:20] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:30:23] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 16:30:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:39:52] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:39:53] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:40:10] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:40:10] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:40:10] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 16:40:10] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:42:44] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:42:45] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:43:08] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:43:08] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:43:08] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: (pymysql.err.OperationalError) (1054, "Unknown column 'CRIACAO_FORM' in 'field list'")
+[SQL: SELECT 
+    ID,
+    VERSAO,
+    CRIACAO_FORM,
+    EDICAO_FORM,
+    DESCRICAO_FORM,
+    C_CUSTO,
+    SECAO,
+    NOME_FORM,
+    ENCARREGADO,
+    ENGENHEIRO,
+    RH_LOCAL,
+    SUPERINTENDENTE,
+    DIRETOR,
+    CONT_MANUT,
+    GRUPO_USUARIOS
+FROM (
+    SELECT 
+        documentid AS 'ID',
+        version AS 'VERSAO',
+        data_create_form AS 'CRIACAO FORM',
+        data_edit_form AS 'EDICAO FORM',
+        descriForm AS 'DESCRICAO FORM',
+        S0_txt_ccusto AS 'C CUSTO',
+        S0_txt_cod AS 'SECAO',
+        S0_txt_desc AS 'NOME FORM',
+        S0_txt_enca AS 'ENCARREGADO',
+        S0_txt_eng AS 'ENGENHEIRO',
+        S0_txt_rh AS 'RH LOCAL',
+        S0_txt_cordeng AS 'SUPERINTENDENTE',
+        S0_txt_dire AS 'DIRETOR',
+        S0_txt_controlador AS 'CONT MANUT',
+        S0_txt_grupo_user AS 'GRUPO USUARIOS',
+        ROW_NUMBER() OVER (PARTITION BY S0_txt_ccusto ORDER BY version DESC) AS ranking
+    FROM ML1010_APROVADOR_SECAO
+    WHERE documentid > 42241 
+      AND documentid <> 45613
+) AS consulta_rankeada
+WHERE ranking = 1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[25/03/2026 16:43:08] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:51:02] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:51:03] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:51:18] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:51:19] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:51:19] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 16:51:19] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 16:53:38] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 16:53:39] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:53:58] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 16:53:58] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 16:53:58] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 16:53:59] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[25/03/2026 17:00:03] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 17:00:04] ERRO: Erro ao processar Aprovadores.xlsx. Motivo: [Errno 13] Permission denied: 'C:\\Users\\gabriel.silva\\VS Code\\Dashboard\\pages\\Aprovadores.xlsx'
+[25/03/2026 17:01:14] --- INICIANDO EXECUÇÃO DO BOT ---
+[25/03/2026 17:01:16] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[25/03/2026 17:01:50] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[25/03/2026 17:01:51] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[25/03/2026 17:01:53] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[25/03/2026 17:01:53] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[26/03/2026 08:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[26/03/2026 08:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[26/03/2026 08:00:20] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[26/03/2026 08:00:20] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[26/03/2026 08:00:21] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[26/03/2026 08:00:21] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[26/03/2026 12:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[26/03/2026 12:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[26/03/2026 12:00:30] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[26/03/2026 12:00:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[26/03/2026 12:00:32] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[26/03/2026 12:00:32] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[26/03/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[26/03/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[26/03/2026 17:00:41] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[26/03/2026 17:00:42] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[26/03/2026 17:00:42] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[26/03/2026 17:00:42] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[27/03/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[27/03/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[27/03/2026 08:00:24] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[27/03/2026 08:00:31] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[27/03/2026 08:00:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[27/03/2026 08:00:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[27/03/2026 08:00:58] --- INICIANDO EXECUÇÃO DO BOT ---
+[27/03/2026 08:00:59] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[27/03/2026 08:01:11] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[27/03/2026 08:01:12] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[27/03/2026 08:01:12] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[27/03/2026 08:01:12] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[27/03/2026 12:00:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[27/03/2026 12:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[27/03/2026 12:00:34] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[27/03/2026 12:00:35] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[27/03/2026 12:00:36] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[27/03/2026 12:00:36] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[27/03/2026 13:23:11] --- INICIANDO EXECUÇÃO DO BOT ---
+[27/03/2026 13:23:12] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[27/03/2026 13:23:28] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[27/03/2026 13:23:28] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[27/03/2026 13:23:29] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[27/03/2026 13:23:29] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[27/03/2026 17:18:26] --- INICIANDO EXECUÇÃO DO BOT ---
+[27/03/2026 17:18:27] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[27/03/2026 17:18:44] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[27/03/2026 17:18:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[27/03/2026 17:18:46] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[27/03/2026 17:18:46] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[30/03/2026 12:00:08] --- INICIANDO EXECUÇÃO DO BOT ---
+[30/03/2026 12:00:11] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[30/03/2026 12:00:39] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[30/03/2026 12:01:22] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[30/03/2026 12:01:24] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[30/03/2026 12:01:24] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[30/03/2026 12:05:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[30/03/2026 12:05:18] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[30/03/2026 12:05:50] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[30/03/2026 12:05:51] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[30/03/2026 12:05:52] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[30/03/2026 12:05:52] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[30/03/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[30/03/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[30/03/2026 17:00:32] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[30/03/2026 17:00:32] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[30/03/2026 17:00:33] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[30/03/2026 17:00:33] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[30/03/2026 17:10:13] --- INICIANDO EXECUÇÃO DO BOT ---
+[30/03/2026 17:10:14] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[30/03/2026 17:10:31] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[30/03/2026 17:10:31] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[30/03/2026 17:10:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[30/03/2026 17:10:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[31/03/2026 08:00:18] --- INICIANDO EXECUÇÃO DO BOT ---
+[31/03/2026 08:00:19] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[31/03/2026 08:00:37] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[31/03/2026 08:00:38] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[31/03/2026 08:00:38] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[31/03/2026 08:00:38] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[31/03/2026 09:45:14] --- INICIANDO EXECUÇÃO DO BOT ---
+[31/03/2026 09:45:16] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[31/03/2026 09:45:33] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[31/03/2026 09:45:33] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[31/03/2026 09:45:35] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[31/03/2026 09:45:35] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[31/03/2026 12:00:07] --- INICIANDO EXECUÇÃO DO BOT ---
+[31/03/2026 12:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[31/03/2026 12:00:36] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[31/03/2026 12:01:19] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[31/03/2026 12:01:21] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[31/03/2026 12:01:21] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[31/03/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[31/03/2026 17:00:06] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[31/03/2026 17:00:32] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[31/03/2026 17:02:23] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[31/03/2026 17:02:24] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[31/03/2026 17:02:24] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[01/04/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[01/04/2026 08:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[01/04/2026 08:00:26] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[01/04/2026 08:00:26] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[01/04/2026 08:00:28] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[01/04/2026 08:00:28] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[01/04/2026 12:00:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[01/04/2026 12:00:19] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[01/04/2026 12:01:07] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[01/04/2026 12:01:21] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[01/04/2026 12:01:22] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[01/04/2026 12:01:22] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[01/04/2026 13:39:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[01/04/2026 13:39:20] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[01/04/2026 13:39:59] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[01/04/2026 13:40:00] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[01/04/2026 13:40:01] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[01/04/2026 13:40:01] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[01/04/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[01/04/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[01/04/2026 17:00:38] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[01/04/2026 17:00:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[01/04/2026 17:00:40] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[01/04/2026 17:00:40] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[01/04/2026 17:59:54] --- INICIANDO EXECUÇÃO DO BOT ---
+[01/04/2026 17:59:55] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[01/04/2026 18:00:12] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[01/04/2026 18:00:13] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[01/04/2026 18:00:13] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[01/04/2026 18:00:13] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 08:00:35] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 08:00:36] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 08:00:36] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 08:00:36] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 08:22:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 08:22:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 08:22:26] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 08:22:27] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 08:22:27] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 08:22:27] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 12:00:09] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 12:00:10] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 12:00:38] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 12:00:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 12:00:39] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 12:00:39] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 14:49:17] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 14:49:18] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 14:49:45] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 14:49:45] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 14:49:47] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 14:49:47] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 17:00:19] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 17:00:23] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 17:01:19] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 17:02:07] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 17:02:10] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 17:02:10] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[02/04/2026 17:02:28] --- INICIANDO EXECUÇÃO DO BOT ---
+[02/04/2026 17:02:51] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[02/04/2026 17:03:32] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[02/04/2026 17:03:33] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[02/04/2026 17:03:36] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[02/04/2026 17:03:36] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/04/2026 08:09:27] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/04/2026 08:09:29] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:30] ERRO: Erro ao processar Roncador.xlsx. Motivo: Execution failed on sql 'WITH COMPASA_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'COMPASA DO BRASIL'
+    AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'CONSORCIO RONCADOR'
+    AND D_E_L_E_T_ <> '*'
+),
+COMPASA_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+),
+COMPASA_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+)
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+LEFT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+
+UNION ALL
+
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+RIGHT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+WHERE C.B1_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+LEFT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+RIGHT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+WHERE C.A2_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+LEFT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+RIGHT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+WHERE C.A1_COD IS NULL
+ORDER BY 
+    TIPO DESC, 
+    COALESCE(RECNO_COMPASA, RECNO_RONCADOR) ASC': (pymysql.err.InternalError) (3, "Error writing file '/tmp/MYfd=13' (OS errno 28 - No space left on device)")
+[SQL: WITH COMPASA_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'COMPASA DO BRASIL'
+    AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'CONSORCIO RONCADOR'
+    AND D_E_L_E_T_ <> '*'
+),
+COMPASA_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+),
+COMPASA_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+)
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+LEFT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+
+UNION ALL
+
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+RIGHT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+WHERE C.B1_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+LEFT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+RIGHT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+WHERE C.A2_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+LEFT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+RIGHT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+WHERE C.A1_COD IS NULL
+ORDER BY 
+    TIPO DESC, 
+    COALESCE(RECNO_COMPASA, RECNO_RONCADOR) ASC]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+[06/04/2026 08:09:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/04/2026 08:09:48] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/04/2026 08:09:49] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:49] ERRO: Erro ao processar Roncador.xlsx. Motivo: Execution failed on sql 'WITH COMPASA_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'COMPASA DO BRASIL'
+    AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'CONSORCIO RONCADOR'
+    AND D_E_L_E_T_ <> '*'
+),
+COMPASA_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+),
+COMPASA_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+)
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+LEFT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+
+UNION ALL
+
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+RIGHT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+WHERE C.B1_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+LEFT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+RIGHT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+WHERE C.A2_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+LEFT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+RIGHT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+WHERE C.A1_COD IS NULL
+ORDER BY 
+    TIPO DESC, 
+    COALESCE(RECNO_COMPASA, RECNO_RONCADOR) ASC': (pymysql.err.InternalError) (3, "Error writing file '/tmp/MYfd=13' (OS errno 28 - No space left on device)")
+[SQL: WITH COMPASA_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'COMPASA DO BRASIL'
+    AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_PROD AS (
+    SELECT B1_COD, B1_DESC, B1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SB1_CADASTRO_PRODUTO
+    WHERE B1_EMPRESA = 'CONSORCIO RONCADOR'
+    AND D_E_L_E_T_ <> '*'
+),
+COMPASA_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_FORN AS (
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA2_CADASTRO_FORNECEDOR
+    WHERE A2_EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+),
+COMPASA_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'COMPASA DO BRASIL'
+      AND D_E_L_E_T_ <> '*'
+),
+RONCADOR_CLI AS (
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    FROM SA1_CADASTRO_CLIENTE
+    WHERE EMPRESA = 'CONSORCIO RONCADOR'
+      AND D_E_L_E_T_ <> '*'
+)
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+LEFT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+
+UNION ALL
+
+SELECT 
+    'PRODUTO' AS TIPO,
+    C.B1_COD AS COD_COMPASA, 
+    '' AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.B1_DESC)) AS DESC_COMPASA, 
+    CASE WHEN C.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA,
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.B1_COD AS COD_RONCADOR, 
+    '' AS LOJA_RONCADOR,
+    LTRIM(RTRIM(R.B1_DESC)) AS DESC_RONCADOR,
+    CASE WHEN R.B1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR,
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_PROD C
+RIGHT JOIN RONCADOR_PROD R ON C.B1_COD = R.B1_COD
+WHERE C.B1_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+LEFT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+
+UNION ALL
+
+SELECT 
+    'FORNECEDOR' AS TIPO,
+    C.A2_COD AS COD_COMPASA, 
+    C.A2_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A2_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A2_COD AS COD_RONCADOR, 
+    R.A2_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A2_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A2_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_FORN C
+RIGHT JOIN RONCADOR_FORN R 
+    ON C.A2_COD = R.A2_COD 
+   AND C.A2_LOJA = R.A2_LOJA
+WHERE C.A2_COD IS NULL
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+LEFT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+
+UNION ALL
+
+SELECT 
+    'CLIENTE' AS TIPO,
+    C.A1_COD AS COD_COMPASA, 
+    C.A1_LOJA AS LOJA_COMPASA, 
+    LTRIM(RTRIM(C.A1_NOME)) AS DESC_COMPASA, 
+    CASE WHEN C.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_COMPASA, 
+    C.R_E_C_N_O_ AS RECNO_COMPASA,
+    C.S_T_A_M_P_ AS STAMP_COMPASA,
+    ' | ' AS SEP,
+    R.A1_COD AS COD_RONCADOR, 
+    R.A1_LOJA AS LOJA_RONCADOR, 
+    LTRIM(RTRIM(R.A1_NOME)) AS DESC_RONCADOR, 
+    CASE WHEN R.A1_MSBLQL = '2' THEN 'ATIVO' ELSE 'INATIVO' END AS STATUS_RONCADOR, 
+    R.R_E_C_N_O_ AS RECNO_RONCADOR,
+    R.S_T_A_M_P_ AS STAMP_RONCADOR,
+    CASE 
+        WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
+        ELSE 'Cadastros iguais'
+    END AS VALIDACAO
+FROM COMPASA_CLI C
+RIGHT JOIN RONCADOR_CLI R 
+    ON C.A1_COD = R.A1_COD 
+   AND C.A1_LOJA = R.A1_LOJA
+WHERE C.A1_COD IS NULL
+ORDER BY 
+    TIPO DESC, 
+    COALESCE(RECNO_COMPASA, RECNO_RONCADOR) ASC]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+[06/04/2026 08:09:49] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:50] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[06/04/2026 08:09:50] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/04/2026 12:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/04/2026 12:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/04/2026 12:00:26] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[06/04/2026 12:00:26] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/04/2026 12:00:30] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[06/04/2026 12:00:30] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[06/04/2026 17:00:05] --- INICIANDO EXECUÇÃO DO BOT ---
+[06/04/2026 17:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[06/04/2026 17:01:13] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[06/04/2026 17:01:14] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[06/04/2026 17:01:23] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[06/04/2026 17:01:23] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[07/04/2026 08:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[07/04/2026 08:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[07/04/2026 08:00:29] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[07/04/2026 08:00:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[07/04/2026 08:00:33] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[07/04/2026 08:00:33] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[07/04/2026 12:00:07] --- INICIANDO EXECUÇÃO DO BOT ---
+[07/04/2026 12:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[07/04/2026 12:00:37] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[07/04/2026 12:00:58] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[07/04/2026 12:00:59] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[07/04/2026 12:00:59] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[07/04/2026 12:05:19] --- INICIANDO EXECUÇÃO DO BOT ---
+[07/04/2026 12:05:20] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[07/04/2026 12:05:51] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[07/04/2026 12:05:51] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[07/04/2026 12:05:53] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[07/04/2026 12:05:53] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[07/04/2026 17:00:06] --- INICIANDO EXECUÇÃO DO BOT ---
+[07/04/2026 17:00:07] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[07/04/2026 17:00:38] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[07/04/2026 17:00:39] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[07/04/2026 17:00:39] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[07/04/2026 17:00:39] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[07/04/2026 17:25:21] --- INICIANDO EXECUÇÃO DO BOT ---
+[07/04/2026 17:25:22] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[07/04/2026 17:25:52] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[07/04/2026 17:25:53] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[07/04/2026 17:25:54] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[07/04/2026 17:25:54] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[08/04/2026 08:00:08] --- INICIANDO EXECUÇÃO DO BOT ---
+[08/04/2026 08:00:09] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[08/04/2026 08:00:33] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[08/04/2026 08:00:34] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[08/04/2026 08:00:40] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[08/04/2026 08:00:40] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[08/04/2026 08:09:57] --- INICIANDO EXECUÇÃO DO BOT ---
+[08/04/2026 08:09:58] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[08/04/2026 08:10:35] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[08/04/2026 08:10:36] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[08/04/2026 08:10:38] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[08/04/2026 08:10:38] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[08/04/2026 12:00:07] --- INICIANDO EXECUÇÃO DO BOT ---
+[08/04/2026 12:00:08] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[08/04/2026 12:00:30] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[08/04/2026 12:00:30] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[08/04/2026 12:00:31] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[08/04/2026 12:00:31] --- FINALIZANDO EXECUÇÃO DO BOT ---
+
+[08/04/2026 13:24:03] --- INICIANDO EXECUÇÃO DO BOT ---
+[08/04/2026 13:24:03] SUCESSO: Aba Plan1 de Aprovadores.xlsx atualizada.
+[08/04/2026 13:24:17] SUCESSO: Aba Plan1 de Roncador.xlsx atualizada.
+[08/04/2026 13:24:17] SUCESSO: Aba Plan2 de Aprovadores.xlsx atualizada.
+[08/04/2026 13:24:18] SUCESSO: Aba Form de Aprovadores.xlsx atualizada.
+[08/04/2026 13:24:18] --- FINALIZANDO EXECUÇÃO DO BOT ---
+

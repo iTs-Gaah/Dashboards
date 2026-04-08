@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 import openpyxl as px
 from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
 from dotenv import load_dotenv
 
 # Carrega as variáveis do arquivo .env que você criou
@@ -12,11 +13,25 @@ load_dotenv("Password.env")
 user = os.getenv("DW_USER")
 password = os.getenv("DW_PASS")
 host = os.getenv("DW_HOST")
+port = os.getenv("DW_PORT")
 db_name = os.getenv("DW_NAME")
 
-# Monta a string de conexão (ajuste o driver se não for SQL Server)
-string_conexao = f"mysql+pymysql://{user}:{password}@{host}/{db_name}"
-engine = create_engine(string_conexao)
+# Cria o objeto de URL de forma segura (trata caracteres especiais na senha automaticamente)
+url_conexao = URL.create(
+    drivername="mysql+pymysql",
+    username=user,
+    password=password,
+    host=host,
+    port=int(port) if port else 3306,
+    database=db_name
+)
+
+# Cria o engine com o pool configurado para evitar timeout
+engine = create_engine(
+    url_conexao,
+    pool_pre_ping=True,
+    pool_recycle=1800
+)
 
 def gravar_log(mensagem):
     # Formata a data e hora no padrão BR
@@ -37,7 +52,8 @@ def executar_bot():
     tarefas = [
         {"arquivo_sql": "Consult_Aprovadores.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Plan1"},
         {"arquivo_sql": "Consult_Roncador.sql", "arquivo_saida": "Roncador.xlsx", "aba": "Plan1"},
-        {"arquivo_sql": "Consult_C.Custo.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Plan2"}
+        {"arquivo_sql": "Consult_C.Custo.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Plan2"},
+        {"arquivo_sql": "Consult_Form.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Form"}
     ]
     
     gravar_log("--- INICIANDO EXECUÇÃO DO BOT ---")
@@ -65,9 +81,9 @@ def executar_bot():
             gravar_log(msg_sucesso) # Grava o sucesso no log
             
         except Exception as e:
-            msg_erro = f"ERRO: Deu merda ao processar {arquivo}. Motivo: {e}"
+            msg_erro = f"ERRO: Erro ao processar {arquivo}. Motivo: {e}"
             print(msg_erro)
-            gravar_log(msg_erro) # Grava a merda no log
+            gravar_log(msg_erro) # Grava o erro no log
 
     gravar_log("--- FINALIZANDO EXECUÇÃO DO BOT ---\n")
 

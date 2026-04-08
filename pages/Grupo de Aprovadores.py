@@ -26,12 +26,6 @@ else:
 
 st.markdown(f"""
     <style>
-    /* Sobe o painel matando a margem gigante padrão do Streamlit */
-    .block-container {{
-        padding-top: 2rem !important;
-        padding-bottom: 2rem !important;
-    }}
-    
     /* Força a cor do botão primário (selecionado) dinamicamente */
     button[kind="primary"] {{
         background-color: {cor_primaria} !important;
@@ -155,16 +149,16 @@ col_esq2, col_btn_p, col_meio2, col_btn_f, col_dir2 = st.columns([3, 1.5, 1, 1.5
 
 with col_btn_p:
     cor_btn_p = "primary" if st.session_state.tipo_visao == "Protheus" else "secondary"
-    if st.button("Grupo de Aprovadores", width="stretch", type=cor_btn_p):
+    if st.button("Grupo de Aprovadores", use_container_width=True, type=cor_btn_p):
         st.session_state.tipo_visao = "Protheus"
         st.rerun()
 
 with col_btn_f:
     cor_btn_f = "primary" if st.session_state.tipo_visao == "Fluig" else "secondary"
-    if st.button("Formulário de Aprovadores", width="stretch", type=cor_btn_f):
+    if st.button("Formulário de Aprovadores", use_container_width=True, type=cor_btn_f):
         st.session_state.tipo_visao = "Fluig"
         st.rerun()
-
+        
 if st.session_state.tipo_visao is None:
     st.markdown("""
         <div style='text-align: center; margin-top: 30px;'>
@@ -175,7 +169,7 @@ if st.session_state.tipo_visao is None:
 
 tipo_visao = st.session_state.tipo_visao
 st.write("---")
-espaco_hack = " " * (st.session_state.update_key % 2) 
+espaco_hack = " " * (int(st.session_state.update_key) % 2)
 # ==============================================================================
 # --- LÓGICA PROTHEUS COMPLETA ---
 # ==============================================================================
@@ -224,7 +218,7 @@ if tipo_visao == "Protheus":
                 
                 st.write(f"❌ {emp_erro} - {fil_erro} - {cc_erro} - {desc_erro} - {status_erro}")
     else:
-        st.success("✅ Tudo certo! Todos os Centros de Custo ativos têm Grupo de Aprovadores.")
+        st.success("✅ Tudo certo! Todos os Centros de Custo ativos tem Grupo de Aprovadores.")
     
     st.write("---")
 
@@ -306,17 +300,17 @@ if tipo_visao == "Protheus":
         busca_status_cc = st.selectbox("🚩 Status do Centro de Custo", ["Todos", "Ativo", "Bloqueado"], key="filtro_status_cc")
 
     col1, col2, col3 = st.columns(3)
-    with col1: busca_cc = st.text_input("Centro de Custo:", key="filtro_cc")
+    with col1: busca_cc = st.text_input("Centro de Custo/Descrição:", key="filtro_cc")
     with col2: busca_grupo = st.text_input("Grupo de Aprovação:", key="filtro_grupo")
     with col3: busca_aprovador = st.text_input("Aprovador:", key="filtro_aprovador")
 
+    # Botões alinhados na esquerda com espaço vazio jogado pra direita
     btn_col1, btn_col2, btn_col3, _ = st.columns([1, 1, 1, 3])
-    with btn_col1: st.button("🧹 Limpar Filtros", on_click=limpar_tudo, width="stretch", key="btn_limpa_protheus")
-    with btn_col2: st.button("➕ Expandir Todos", on_click=set_expandir, args=(True,), width="stretch", key="btn_exp_protheus")
-    with btn_col3: st.button("➖ Recolher Todos", on_click=set_expandir, args=(False,), width="stretch", key="btn_rec_protheus")
     
+    with btn_col1: st.button("🧹 Limpar Filtros", on_click=limpar_tudo, use_container_width=True, key="btn_limpa_protheus")
+    with btn_col2: st.button("➕ Expandir Todos", on_click=set_expandir, args=(True,), use_container_width=True, key="btn_exp_protheus")
+    with btn_col3: st.button("➖ Recolher Todos", on_click=set_expandir, args=(False,), use_container_width=True, key="btn_rec_protheus")
     st.write("---")
-
     # AQUI VOCÊ CRIA A VARIÁVEL. DEPOIS DISSO É QUE VEM O FILTRO, CARALHO.
     df_filtrado = df_regras.copy()
     
@@ -347,10 +341,31 @@ if tipo_visao == "Protheus":
         ]
     df_filtrado['CHAVE_UNICA'] = df_filtrado[col_emp_regras].astype(str).str.strip() + " | " + df_filtrado[col_filial].astype(str).str.strip() + " | " + df_filtrado[col_cc_regras].astype(str).str.strip()
 
+    # --- O PULO DO GATO ---
+    # Como a Plan1 tem descrições zoadas nas outras filiais, puxamos a descrição Mestre da Plan2 antes de filtrar
+    col_fil_plan2 = 'CTT_FILIAL' if 'CTT_FILIAL' in df_base_cc.columns else df_base_cc.columns[1]
+    
+    # Prepara as chaves pra bater as duas planilhas
+    df_filtrado['_EMP_MATCH'] = pd.to_numeric(df_filtrado[col_emp_regras], errors='coerce').fillna(-999).astype(int).astype(str).str.zfill(2)
+    df_filtrado['_FIL_MATCH'] = pd.to_numeric(df_filtrado[col_filial], errors='coerce').fillna(-999).astype(int).astype(str).str.zfill(6)
+    df_filtrado['_CC_MATCH'] = df_filtrado[col_cc_regras].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+
+    df_base_cc['_EMP_MATCH'] = pd.to_numeric(df_base_cc[col_emp_mestre], errors='coerce').fillna(-999).astype(int).astype(str).str.zfill(2)
+    df_base_cc['_FIL_MATCH'] = pd.to_numeric(df_base_cc[col_fil_plan2], errors='coerce').fillna(-999).astype(int).astype(str).str.zfill(6)
+    df_base_cc['_CC_MATCH'] = df_base_cc[col_cc_mestre].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+
+    # Traz a descrição certa da Plan2 pro df_filtrado
+    df_filtrado = df_filtrado.merge(
+        df_base_cc[['_EMP_MATCH', '_FIL_MATCH', '_CC_MATCH', col_desc_mestre]].drop_duplicates(),
+        on=['_EMP_MATCH', '_FIL_MATCH', '_CC_MATCH'],
+        how='left'
+    )
+
+    # Agora o text_input bate no código OU na descrição MESTRE validada
     if busca_cc:
         df_filtrado = df_filtrado[
-            df_filtrado[col_cc_regras].str.contains(busca_cc, case=False, na=False) |
-            df_filtrado[col_desc_regras].str.contains(busca_cc, case=False, na=False)
+            df_filtrado[col_cc_regras].astype(str).str.contains(busca_cc, case=False, na=False) |
+            df_filtrado[col_desc_mestre].astype(str).str.contains(busca_cc, case=False, na=False)
         ]
     if busca_grupo:
         col_grupo_busca = 'AL_DESC' if 'AL_DESC' in df_filtrado.columns else 'NOME GRUPO'
@@ -486,7 +501,17 @@ elif tipo_visao == "Fluig":
     if df_form is None or df_form.empty:
         st.warning("A aba 'Form' não foi encontrada ou está vazia na planilha. Vai dar uma olhada nisso.")
     else:
-        # Cria colunas de limpeza extremas para garantir que o cruzamento não quebre
+        # --- BLINDAGEM CONTRA KEYERROR ---
+        # Procura a coluna de custo mesmo que o nome esteja sutilmente diferente (espaço vs underline)
+        if 'C CUSTO' not in df_form.columns:
+            col_cc_detectada = next((c for c in df_form.columns if 'CUSTO' in c.upper() or 'CC' in c.upper()), None)
+            if col_cc_detectada:
+                df_form = df_form.rename(columns={col_cc_detectada: 'C CUSTO'})
+            else:
+                st.error("🚨 Não achei nenhuma coluna de Centro de Custo no Form. Ajusta essa query ou o Excel!")
+                st.stop()
+
+        # Agora cria as colunas de limpeza sem medo de KeyError
         df_base_cc['CC_CLEAN'] = df_base_cc[col_cc_mestre].astype(str).str.strip().str.upper().str.replace(r'\.0$', '', regex=True)
         df_form['CC_CLEAN'] = df_form['C CUSTO'].astype(str).str.strip().str.upper().str.replace(r'\.0$', '', regex=True)
 
@@ -497,24 +522,26 @@ elif tipo_visao == "Fluig":
         # Ativos da Plan2 que NÃO estão no Form
         cc_ativos_plan2 = df_base_cc_unicos[df_base_cc_unicos[col_bloq_auditoria].isin(['2', 'ATIVO'])]
         cc_sem_form = cc_ativos_plan2[~cc_ativos_plan2['CC_CLEAN'].isin(ccs_no_fluig_unicos)]
-
+        
+        if 'CTT_XFINAN' in cc_sem_form.columns:
+            cc_sem_form = cc_sem_form[cc_sem_form['CTT_XFINAN'].astype(str).str.strip().str.upper() != 'S']
+            
         # Inativos da Plan2 que ESTÃO no Form
         cc_inativos_plan2 = df_base_cc_unicos[df_base_cc_unicos[col_bloq_auditoria].isin(['1', 'BLOQUEADO', 'INATIVO'])]
         cc_inativo_com_form = cc_inativos_plan2[cc_inativos_plan2['CC_CLEAN'].isin(ccs_no_fluig_unicos)]
 
         if not cc_sem_form.empty:
-            # Mata as duplicatas na força bruta antes de exibir na tela
             cc_sem_form_unico = cc_sem_form.drop_duplicates(subset=[col_cc_mestre])
-            st.error("🚨 **Atenção: Existe Centro de Custo ativo sem Formulário cadastrado!**")
-            with st.expander(f"Ver lista para cadastrar formulário ({len(cc_sem_form_unico)} encontradas):"):
+            st.error(f"🚨 **Atenção: Existem {len(cc_sem_form_unico)} CCs ativos sem Formulário cadastrado!**")
+            with st.expander("Ver lista para cadastrar formulário:"):
                 for index, row in cc_sem_form_unico.iterrows():
                     cc_erro = str(row[col_cc_mestre]).strip()
                     desc_erro = str(row[col_desc_mestre]).strip() if pd.notna(row.get(col_desc_mestre)) else 'Sem descrição'
                     st.write(f"❌ {cc_erro} - {desc_erro}")
                     
         if not cc_inativo_com_form.empty:
-            st.warning("⚠️ **Atenção: Existe Centro de Custo inativos com Formulário cadastrado!**")
-            with st.expander(f"Ver lista para excluir formulário ({len(cc_inativo_com_form)} encontradas):"):
+            st.warning(f"⚠️ **Atenção: Existem {len(cc_inativo_com_form)} CCs inativos com Formulário cadastrado!**")
+            with st.expander("Ver lista para excluir formulário:"):
                 for index, row in cc_inativo_com_form.iterrows():
                     cc_erro = str(row[col_cc_mestre]).strip()
                     desc_erro = str(row[col_desc_mestre]).strip() if pd.notna(row.get(col_desc_mestre)) else 'Sem descrição'
@@ -557,7 +584,7 @@ elif tipo_visao == "Fluig":
         st.write("### 🔍 Filtros de Pesquisa (Fluig)")
         
         col1_f, col2_f, col3_f = st.columns(3)
-        with col1_f: busca_cc_fluig = st.text_input("Centro de Custo:", key="filtro_cc_fluig")
+        with col1_f: busca_cc_fluig = st.text_input("Centro de Custo/Descrição:", key="filtro_cc_fluig")
         with col2_f: busca_secao_fluig = st.text_input("Seção RM:", key="filtro_secao_fluig")
         with col3_f: busca_aprovador_fluig = st.text_input("Aprovador:", key="filtro_aprovador_fluig")
         
@@ -620,11 +647,29 @@ elif tipo_visao == "Fluig":
 
         ccs_fluig = df_form_filtrado['C CUSTO'].unique()
         
-        st.write(f"### 📝 Formulários Fluig ({len(ccs_fluig)} resultados)")
+        col_tit_f, col_btn_f = st.columns([3, 1])
+        with col_tit_f:
+            st.write(f"### 📝 Formulários Fluig ({len(ccs_fluig)} resultados)")
         
         if len(ccs_fluig) == 0:
             st.warning("Nenhum resultado encontrado no Fluig com esses filtros.")
         else:
+            # Gera a porra do botão de download igual no Protheus
+            with col_btn_f:
+                buffer_f = io.BytesIO()
+                # Tira o lixo de coluna que você usou pra cruzar
+                df_fluig_baixar = df_form_filtrado.drop(columns=['CC_CLEAN'], errors='ignore')
+                
+                with pd.ExcelWriter(buffer_f, engine='openpyxl') as writer:
+                    df_fluig_baixar.to_excel(writer, index=False, sheet_name='Fluig_Filtrado')
+                
+                st.download_button(
+                    label="📥 Baixar Excel",
+                    data=buffer_f.getvalue(),
+                    file_name="Aprovadores_Filtrados_Fluig.xlsx",
+                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    use_container_width=True
+                )
             for cc in ccs_fluig:
                 dados_cc_fluig = df_form_filtrado[df_form_filtrado['C CUSTO'] == cc]
                 
@@ -637,7 +682,7 @@ elif tipo_visao == "Fluig":
                 titulo = f"📝 {cc} - {desc_cc}{espaco_hack}"
                 
                 with st.expander(titulo, expanded=st.session_state.expandir_todos):
-                    colunas_padrao = ['C CUSTO', 'SECAO', 'GRUPO USUARIOS', 'GRUPO', 'ENCARREGADO', 'GERENTE/ENGENHEIRO', 'RH LOCAL', 'SUPERINTENDENTE', 'DIRETOR', 'CONT MANUT']
+                    colunas_padrao = ['EDICAO FORM', 'C CUSTO', 'SECAO', 'GRUPO USUARIOS', 'GRUPO', 'ENCARREGADO', 'RH LOCAL', 'ENGENHEIRO', 'SUPERINTENDENTE', 'DIRETOR', 'CONT MANUT']
                     colunas_exibir = [col for col in colunas_padrao if col in dados_cc_fluig.columns]
                     
                     if colunas_exibir:
