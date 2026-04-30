@@ -1,191 +1,79 @@
 import streamlit as st
-import pandas as pd
-import os
-import base64
-from datetime import datetime
 
-# Configuração da página
 st.set_page_config(
     page_title="Portal de Dados de Cadastros",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-# Caminhos
-IMG_DIR = r"C:\Users\gabriel.silva\VS Code\Dashboard"
-EXCEL_DIR = r"C:\Users\gabriel.silva\VS Code\Dashboard\pages"
-CAMINHO_ONEDRIVE = r"C:\Users\gabriel.silva\OneDrive - compasa.com.br\QSMS - Administrativo - Área de Cadastros\Controle Cadastros.xlsx"
+# Customização do Menu Lateral Nativo (Sidebar) para um Visual Premium Corporativo
+st.markdown("""
+<style>
+/* Cor Grafite Vibrante na Barra Lateral */
+[data-testid="stSidebar"] {
+    background-color: #2F3336 !important;
+    border-right: 1px solid #1E2124 !important;
+}
 
-# Função pra ler as imagens locais
-def carregar_imagem_base64(nome_arquivo):
-    caminho = os.path.join(IMG_DIR, nome_arquivo)
-    if os.path.exists(caminho):
-        with open(caminho, "rb") as f:
-            return base64.b64encode(f.read()).decode()
-    return ""
+/* Arruma a cor dos títulos aglomeradores (Ex: Dashboards, Cadastros) */
+[data-testid="stSidebarNavGroup"] div[dir="auto"], [data-testid="stSidebarNav"] > ul > li > div[dir="auto"] {
+    color: #9AA0A6 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px;
+}
 
-# Função pra ler a planilha
-def analisar_planilha(nome_arquivo, aba=0): 
-    caminho = os.path.join(EXCEL_DIR, nome_arquivo)
-    if os.path.exists(caminho):
-        try:
-            # Verifica se foi passada uma lista de abas para somar
-            if isinstance(aba, list):
-                dfs = pd.read_excel(caminho, sheet_name=aba)
-                total_linhas = sum(len(df) for df in dfs.values())
-            else:
-                df = pd.read_excel(caminho, sheet_name=aba) 
-                total_linhas = len(df)
-            
-            timestamp = os.path.getmtime(caminho)
-            data_atualizacao = datetime.fromtimestamp(timestamp).strftime('%d/%m/%Y %H:%M')
-            
-            return f"~{total_linhas}", data_atualizacao
-        except Exception as e:
-            return "~0", "Erro de leitura"
-    return "~0", "Arquivo não encontrado"
+/* Arruma a cor branca suave nos links nativos para dar contraste */
+[data-testid="stSidebarNav"] a span {
+    color: #E8EAED !important;
+    font-weight: 500;
+}
 
-# Processando tudo
-img_portal = carregar_imagem_base64("Portal dados logo.png")
-img_aprovadores = carregar_imagem_base64("Aprovadores logo.png")
-img_roncador = carregar_imagem_base64("Roncador logo.png") 
-img_ccusto = carregar_imagem_base64("C.Custo logo.png") 
-img_fornecedores = carregar_imagem_base64("Fornecedores logo.png")  
+/* Ocultar a linha chata do fundo nativa se houver */
+hr {
+    border-color: #4A4D50 !important;
+}
 
-linhas_aprov, data_aprov = analisar_planilha("Aprovadores.xlsx", aba=["Plan1", "Form"])
-linhas_ronc, data_ronc = analisar_planilha("Roncador.xlsx")
-linhas_ccusto, data_ccusto = analisar_planilha("Aprovadores.xlsx", aba="Plan2")
+[data-testid="stSidebarNav"] a {
+    border-radius: 8px !important;
+    margin: 4px 15px !important;
+    padding: 10px 15px !important;
+    transition: all 0.3s ease !important;
+    font-size: 1rem !important;
+}
+[data-testid="stSidebarNav"] a:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateX(5px);
+}
+[data-testid="stSidebarNavItems"] {
+    padding-top: 15px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
-try:
-    df_fornec = pd.read_excel(CAMINHO_ONEDRIVE, sheet_name="Alt_Att Fornec")
-    linhas_fornecedores = f"~{len(df_fornec)}"
-    timestamp_fornec = os.path.getmtime(CAMINHO_ONEDRIVE)
-    data_fornecedores = datetime.fromtimestamp(timestamp_fornec).strftime('%d/%m/%Y %H:%M')
-except Exception as e:
-    linhas_fornecedores, data_fornecedores = "~0", "Erro no OneDrive"
+# Adiciona a Logo da Empresa de forma nativa e fixa na barra superior do Menu
+import os
+logo_path = os.path.join(os.path.dirname(__file__), "Portal dados logo.png")
+if os.path.exists(logo_path):
+    st.logo(logo_path)
 
-# Lógica de Cor dos números
-def cor_alerta(valor):
-    return "#FF3333" if str(valor).strip() in ["~0", "0"] else "inherit"
+# Nova engine de Navegação do Streamlit (Cria Sessões Profissionais no Menu)
+pages = {
+    "🏠 Visão Geral": [
+        st.Page("pages/00_Home_UI.py", title="Home", icon="🏠", default=True, url_path="Home"),
+    ],
+    "📊 Dashboards": [
+        st.Page("pages/Compasa x Roncador.py", title="Compasa x Roncador", icon="📈", url_path="Compasa_x_Roncador"),
+        st.Page("pages/Grupo de Aprovadores.py", title="Grupo de Aprovadores", icon="👥", url_path="Grupo_de_Aprovadores"),
+        st.Page("pages/Centro de Custo.py", title="Centro de Custo", icon="🏢", url_path="Centro_de_Custo"),
+        st.Page("pages/Gestao_Projetos.py", title="Gestão Projetos", icon="📊", url_path="Gestao_Projetos"),
+    ],
+    "📝 Cadastros": [
+        st.Page("pages/Atualização Fornecedor.py", title="Atualização Fornecedor", icon="📋", url_path="Atualização_Fornecedor"),
+        st.Page("pages/Contabil.py", title="Contábil", icon="💼", url_path="Contabil"),
+        st.Page("pages/Produtos.py", title="Produtos", icon="📦", url_path="Produtos"),
+        st.Page("pages/Tarefas.py", title="Tarefas", icon="✅", url_path="Tarefas"),
+    ]
+}
 
-cor_aprov = cor_alerta(linhas_aprov)
-cor_ronc = cor_alerta(linhas_ronc)
-cor_ccusto = cor_alerta(linhas_ccusto)
-cor_fornec = cor_alerta(linhas_fornecedores)
-
-# Cabeçalho
-html_cabecalho = f"""
-<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-    <img src="data:image/png;base64,{img_portal}" style="width: 80px; height: 80px; margin-right: 15px;">
-    <h1 style="margin: 0; font-size: 3em;">Portal de Dados de Cadastros</h1>
-</div>
-"""
-st.markdown(html_cabecalho, unsafe_allow_html=True)
-st.write("---")
-
-# --- LÓGICA DO STATUS GERAL ---
-# Se qualquer um dos pipelines retornar ~0, a gente avisa que deu merda
-pipelines_zerados = any(str(val).strip() in ["~0", "0"] for val in [linhas_aprov, linhas_ronc, linhas_ccusto, linhas_fornecedores])
-
-if pipelines_zerados:
-    status_texto = "Um ou mais módulos estão inoperantes"
-    status_cor = "#FF3333"
-    status_msg_secundaria = "Verifique falhas na leitura ou bases vazias"
-else:
-    status_texto = "Operacional"
-    status_cor = "#32CD32"
-    status_msg_secundaria = "Todos os pipelines de dados atualizados"
-
-st.markdown(f"**Status do Portal:** <span style='color: {status_cor}; font-weight: bold;'>{status_texto}</span> • {status_msg_secundaria}", unsafe_allow_html=True)
-st.markdown("<br>", unsafe_allow_html=True)
-
-# Estilo da caixa
-estilo_caixa = """
-    background-color: rgba(128, 128, 128, 0.1); 
-    padding: 20px; 
-    border-radius: 10px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    margin-bottom: 20px;
-    cursor: pointer;
-"""
-
-# Cartão: Aprovadores 
-html_aprovadores = f"""
-<a href="Grupo_de_Aprovadores" target="_self" style="text-decoration: none; color: inherit; display: block;">
-    <div style="{estilo_caixa}">
-        <div style="display: flex; align-items: center;">
-            <img src="data:image/png;base64,{img_aprovadores}" style="width: 60px; height: 60px; margin-right: 20px;">
-            <div>
-                <h3 style="margin: 0; padding-bottom: 5px;">Módulo de Aprovadores</h3>
-                <p style="margin: 0; color: #888; font-size: 0.9em;">Gestão e Validação de Regras de (Protheus & Fluig)</p>
-            </div>
-        </div>
-        <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_aprov};">Total de Regras: {linhas_aprov}</p>
-            <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_aprov}</p>
-        </div>
-    </div>
-</a>
-"""
-st.markdown(html_aprovadores, unsafe_allow_html=True)
-
-# Cartão: Roncador 
-html_roncador = f"""
-<a href="Compasa_x_Roncador" target="_self" style="text-decoration: none; color: inherit; display: block;">
-    <div style="{estilo_caixa}">
-        <div style="display: flex; align-items: center;">
-            <img src="data:image/png;base64,{img_roncador}" style="width: 60px; height: 60px; margin-right: 20px;">
-            <div>
-                <h3 style="margin: 0; padding-bottom: 5px;">Módulo Compasa x Roncador</h3>
-                <p style="margin: 0; color: #888; font-size: 0.9em;">Análise e Consulta de Produtos e Fornecedores</p>
-            </div>
-        </div>
-        <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_ronc};">Total de Registros: {linhas_ronc}</p>
-            <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_ronc}</p>
-        </div>
-    </div>
-</a>
-"""
-st.markdown(html_roncador, unsafe_allow_html=True)
-
-# Cartão: Centro de Custo
-html_ccusto = f"""
-<a href="Centro_de_Custo" target="_self" style="text-decoration: none; color: inherit; display: block;">
-    <div style="{estilo_caixa}">
-        <div style="display: flex; align-items: center;">
-            <img src="data:image/png;base64,{img_ccusto}" style="width: 60px; height: 60px; margin-right: 20px;">
-            <div>
-                <h3 style="margin: 0; padding-bottom: 5px;">Módulo Centro de Custo</h3>
-                <p style="margin: 0; color: #888; font-size: 0.9em;">Relação de Centro de Custo</p>
-            </div>
-        </div>
-        <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_ccusto};">Total de Registros: {linhas_ccusto}</p>
-            <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_ccusto}</p>
-        </div>
-    </div>
-</a>
-"""
-st.markdown(html_ccusto, unsafe_allow_html=True)
-
-# Cartão: Fornecedores
-html_fornecedores = f"""
-<a href="Atualização_Fornecedor" target="_self" style="text-decoration: none; color: inherit; display: block;">
-    <div style="{estilo_caixa}">
-        <div style="display: flex; align-items: center;">
-            <img src="data:image/png;base64,{img_fornecedores}" style="width: 60px; height: 60px; margin-right: 20px;">
-            <div>
-                <h3 style="margin: 0; padding-bottom: 5px;">Módulo Atualização de Fornecedores</h3>
-                <p style="margin: 0; color: #888; font-size: 0.9em;">Relação de Fornecedores Atualizados</p>
-            </div>
-        </div>
-        <div style="text-align: right;">
-            <p style="margin: 0; font-size: 1.1em; font-weight: bold; color: {cor_fornec};">Total de Registros: {linhas_fornecedores}</p>
-            <p style="margin: 0; color: #888; font-size: 0.85em; margin-top: 5px;">Data de Atualização: {data_fornecedores}</p>
-        </div>
-    </div>
-</a>
-"""
-st.markdown(html_fornecedores, unsafe_allow_html=True)
+pg = st.navigation(pages)
+pg.run()

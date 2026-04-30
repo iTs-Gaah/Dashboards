@@ -11,25 +11,25 @@ RONCADOR_PROD AS (
     AND D_E_L_E_T_ <> '*'
 ),
 COMPASA_FORN AS (
-    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_CGC, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
     FROM SA2_CADASTRO_FORNECEDOR
     WHERE A2_EMPRESA = 'COMPASA DO BRASIL'
       AND D_E_L_E_T_ <> '*'
 ),
 RONCADOR_FORN AS (
-    SELECT A2_COD, A2_LOJA, A2_NOME, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    SELECT A2_COD, A2_LOJA, A2_NOME, A2_CGC, A2_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
     FROM SA2_CADASTRO_FORNECEDOR
     WHERE A2_EMPRESA = 'CONSORCIO RONCADOR'
       AND D_E_L_E_T_ <> '*'
 ),
 COMPASA_CLI AS (
-    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_CGC, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
     FROM SA1_CADASTRO_CLIENTE
     WHERE EMPRESA = 'COMPASA DO BRASIL'
       AND D_E_L_E_T_ <> '*'
 ),
 RONCADOR_CLI AS (
-    SELECT A1_COD, A1_LOJA, A1_NOME, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
+    SELECT A1_COD, A1_LOJA, A1_NOME, A1_CGC, A1_MSBLQL, R_E_C_N_O_, S_T_A_M_P_
     FROM SA1_CADASTRO_CLIENTE
     WHERE EMPRESA = 'CONSORCIO RONCADOR'
       AND D_E_L_E_T_ <> '*'
@@ -51,7 +51,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
-        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Descrição divergente para mesmo código'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO
 FROM COMPASA_PROD C
@@ -76,7 +76,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.B1_COD IS NULL OR R.B1_COD IS NULL THEN 'Produto não cadastrado'
-        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Valores são diferentes entre as bases'
+        WHEN LTRIM(RTRIM(C.B1_DESC)) <> LTRIM(RTRIM(R.B1_DESC)) THEN 'Descrição divergente para mesmo código'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO
 FROM COMPASA_PROD C
@@ -102,6 +102,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_CGC)) <> LTRIM(RTRIM(R.A2_CGC)) THEN 'CNPJ divergente para mesmo código'
         WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO
@@ -129,6 +130,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.A2_COD IS NULL OR R.A2_COD IS NULL THEN 'Fornecedor não cadastrado'
+        WHEN LTRIM(RTRIM(C.A2_CGC)) <> LTRIM(RTRIM(R.A2_CGC)) THEN 'CNPJ divergente para mesmo código'
         WHEN LTRIM(RTRIM(C.A2_NOME)) <> LTRIM(RTRIM(R.A2_NOME)) THEN 'Valores são diferentes entre as bases'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO
@@ -157,6 +159,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_CGC)) <> LTRIM(RTRIM(R.A1_CGC)) THEN 'CNPJ divergente para mesmo código'
         WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO
@@ -184,6 +187,7 @@ SELECT
     R.S_T_A_M_P_ AS STAMP_RONCADOR,
     CASE 
         WHEN C.A1_COD IS NULL OR R.A1_COD IS NULL THEN 'Cliente não cadastrado'
+        WHEN LTRIM(RTRIM(C.A1_CGC)) <> LTRIM(RTRIM(R.A1_CGC)) THEN 'CNPJ divergente para mesmo código'
         WHEN LTRIM(RTRIM(C.A1_NOME)) <> LTRIM(RTRIM(R.A1_NOME)) THEN 'Valores são diferentes entre as bases'
         ELSE 'Cadastros iguais'
     END AS VALIDACAO

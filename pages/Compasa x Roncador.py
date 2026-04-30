@@ -56,22 +56,36 @@ else:
     st.sidebar.error("❌ Arquivo não encontrado no caminho padrão.")
     arquivo_unico = st.sidebar.file_uploader("Upload da Base Unificada", type=["xlsx"])
 
-# Só roda o resto se tiver um arquivo válido carregado
-if arquivo_unico:
+# Função blindada por Cache Inteligente (Lê e limpa o DataFrame em milissegundos)
+@st.cache_data(show_spinner="Analisando Base de Dados Unificada...")
+def importar_e_limpar_dados(arquivo, ts=0):
     try:
-        df = pd.read_excel(arquivo_unico)
-        
+        df_lido = pd.read_excel(arquivo)
         # MÁGICA PRA LIMPAR O LIXO DA BASE E MATAR O ERRO DO PYARROW
         colunas_pra_limpar = ['COD_COMPASA', 'COD_COMPAS', 'COD_RONCADOR']
         for col in colunas_pra_limpar:
-            if col in df.columns:
+            if col in df_lido.columns:
                 # Transforma em texto, limpa os lixos e tira espaços
-                df[col] = df[col].astype(str).str.replace('.0', '', regex=False).str.replace('\t', '', regex=False).str.strip()
+                df_lido[col] = df_lido[col].astype(str).str.replace('.0', '', regex=False).str.replace('\t', '', regex=False).str.strip()
                 # Mata a palavra "nan" que o Pandas cria nos campos vazios
-                df[col] = df[col].replace('nan', None)
-                
-    except Exception as e:
-        st.error(f"Não deu para ler o arquivo: {e}")
+                df_lido[col] = df_lido[col].replace('nan', None)
+        return df_lido, None
+    except Exception as erro:
+        return None, erro
+
+# Só roda o resto se tiver um arquivo válido carregado
+if arquivo_unico:
+    # Captura a data de modificação se for o arquivo fixo, ou zero se for upload manual
+    tempo_modificacao = timestamp if 'timestamp' in locals() else 0
+    
+    df, erro_leitura = importar_e_limpar_dados(arquivo_unico, ts=tempo_modificacao)
+    
+    if erro_leitura:
+        st.error(f"Não deu para ler o arquivo: {erro_leitura}")
+        st.stop()
+        
+    if df is None or df.empty:
+        st.error("O arquivo lido gerou uma planilha vazia. Verifique a formatação.")
         st.stop()
 # --- ALERTA CRÍTICO: RONCADOR SEM COMPASA ---
     col_compasa_val = 'COD_COMPASA' if 'COD_COMPASA' in df.columns else ('COD_COMPAS' if 'COD_COMPAS' in df.columns else None)
@@ -84,9 +98,19 @@ if arquivo_unico:
             st.error(f"🚨 ALERTA CRÍTICO: Encontrado {len(erros_roncador)} cadastro(s) no RONCADOR que não existem na COMPASA!")
             
             cols_exibir = [c for c in ['TIPO', 'COD_RONCADOR', 'DESC_RONCADOR'] if c in erros_roncador.columns]
-            st.dataframe(erros_roncador[cols_exibir], hide_index=True, use_container_width=True)
+            st.dataframe(erros_roncador[cols_exibir], hide_index=True, width='stretch')
         else:
-            st.success("✅ Todos os cadastros estão OK.")
+            st.success("✅ Todos os cadastros base estão OK.")
+
+    # --- ALERTA DE DIVERGÊNCIA CADASTRAL (CNPJ/DESCRIÇÃO) ---
+    if 'VALIDACAO' in df.columns:
+        erros_divergentes = df[df['VALIDACAO'].astype(str).str.contains('divergente para mesmo código', case=False, na=False)]
+        
+        if not erros_divergentes.empty:
+            st.warning(f"⚠️ AVISO: Encontrados {len(erros_divergentes)} código(s) com informações divergentes (CNPJ ou Descrição) entre as bases!")
+            cols_exibir_div = [c for c in ['TIPO', col_compasa_val, 'COD_RONCADOR', 'DESC_COMPASA', 'DESC_RONCADOR', 'VALIDACAO'] if c and c in df.columns]
+            st.dataframe(erros_divergentes[cols_exibir_div], hide_index=True, width='stretch')
+
     # --- SETUP DOS CONTAINERS ---
     container_kpi = st.container()
     container_grafico = st.container()
@@ -183,7 +207,7 @@ if arquivo_unico:
             nao_cad_cli = len(df_val_lower[df_val_lower == 'cliente não cadastrado']) 
             
             nao_cadastrado = nao_cad_prod + nao_cad_forn + nao_cad_cli 
-            divergentes = len(df_val_lower[df_val_lower == 'valores são diferentes entre as bases'])
+            divergentes = len(df_val_lower[df_val_lower.str.contains('diferente|divergente', regex=True, na=False)])
         else:
             cadastros_iguais = nao_cadastrado = divergentes = 0
 
@@ -213,7 +237,9 @@ if arquivo_unico:
                     'Produto não cadastrado': '#003399',    # Azul Escuro
                     'Fornecedor não cadastrado': '#87CEFA', # Azul Claro
                     'Cliente não cadastrado': '#FF8C00',    # Laranja
-                    'Valores são diferentes entre as bases': '#DC143C' # Vermelho
+                    'Valores são diferentes entre as bases': '#DC143C', # Vermelho
+                    'CNPJ divergente para mesmo código': '#DC143C',
+                    'Descrição divergente para mesmo código': '#DC143C'
                 }
             )
             st.plotly_chart(fig, width='stretch')

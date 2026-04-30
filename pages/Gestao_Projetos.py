@@ -2,6 +2,20 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Configuração de usuário e senha (replica de Tarefas)
+USUARIO_CORRETO = "gabriel.silva"
+SENHA_CORRETA = "89187"
+
+if "autenticado" not in st.session_state:
+    st.session_state["autenticado"] = False
+
+def verificar_login():
+    if st.session_state.get("usuario_login") == USUARIO_CORRETO and st.session_state.get("senha_login") == SENHA_CORRETA:
+        st.session_state["autenticado"] = True
+    else:
+        st.session_state["autenticado"] = False
+        st.error("Usuário ou senha incorretos. Acesso negado.")
+
 def obter_emoji_status(status):
     if status == 'Concluído':
         return '🟢'
@@ -19,7 +33,11 @@ def limpar_filtros():
     st.session_state.busca_filtro = ""
 
 def renderizar_dashboard():
-    st.set_page_config(page_title="Gestão de Projetos", layout="wide")
+    with st.sidebar:
+        st.write("Conectado como:", USUARIO_CORRETO)
+        if st.button("Sair", key="btn_sair_projetos"):
+            st.session_state["autenticado"] = False
+            st.rerun()
     
     if "projeto_filtro" not in st.session_state:
         st.session_state.projeto_filtro = "Todos"
@@ -255,4 +273,16 @@ def renderizar_dashboard():
         st.error(f"Erro ao carregar o dashboard: {e}")
 
 if __name__ == "__main__":
-    renderizar_dashboard()
+    if not st.session_state["autenticado"]:
+        col_esq, col_centro, col_dir = st.columns([1, 2, 1])
+        
+        with col_centro:
+            st.title("Acesso Restrito")
+            st.write("Por favor, insira suas credenciais para acessar a Gestão de Projetos.")
+            
+            # Usamos keys com sufixo _login para não compartilhar bugs, mesmo com estado de auth compartilhado.
+            st.text_input("Usuário", key="usuario_login")
+            st.text_input("Senha", type="password", key="senha_login")
+            st.button("Entrar", on_click=verificar_login, use_container_width=True)
+    else:
+        renderizar_dashboard()

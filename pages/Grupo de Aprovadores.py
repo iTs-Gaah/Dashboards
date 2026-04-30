@@ -6,10 +6,11 @@ import io
 
 # Configuração da página
 DIRETORIO_ATUAL = os.path.dirname(os.path.abspath(__file__))
+DIRETORIO_PAI = os.path.dirname(DIRETORIO_ATUAL)
 
 st.set_page_config(layout="wide", page_title="Painel de Aprovadores")
-caminho_logo_protheus = os.path.join(DIRETORIO_ATUAL, "Protheus Logo.png")
-caminho_logo_fluig = os.path.join(DIRETORIO_ATUAL, "Fluig Logo.png")
+caminho_logo_protheus = os.path.join(DIRETORIO_PAI, "Protheus Logo.png")
+caminho_logo_fluig = os.path.join(DIRETORIO_PAI, "Fluig Logo.png")
 caminho_fixo = os.path.join(DIRETORIO_ATUAL, "Aprovadores.xlsx")
 
 # Inicializa o estado de visão para usar no CSS dinâmico
@@ -36,8 +37,86 @@ st.markdown(f"""
         background-color: {cor_hover} !important;
         border-color: {cor_hover} !important;
     }}
+    
+    /* === CSS PARA OS CARDS DO EXPLORADOR (ADAPTAVEL TEMA CLARO/ESCURO) === */
+    [data-testid="stExpander"] {{
+        background-color: var(--secondary-background-color);
+        border-radius: 8px;
+        border-left: 6px solid {cor_primaria}; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid var(--background-color);
+        border-right: 1px solid var(--background-color);
+        border-bottom: 1px solid var(--background-color);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }}
+    [data-testid="stExpander"]:hover {{
+        transform: translateY(-2px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }}
+    [data-testid="stExpander"] summary p {{
+        font-size: 1.20rem;
+        font-weight: 700;
+        color: var(--text-color);
+        letter-spacing: 0.5px;
+    }}
+    .card-update {{
+        background-color: transparent;
+        border: 1px solid #2ecc71;
+        color: var(--text-color);
+        border-radius: 20px;
+        padding: 3px 12px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        white-space: nowrap;
+    }}
+    .card-subtitle {{
+        color: var(--text-color);
+        opacity: 0.7;
+        font-size: 0.95rem;
+        margin-bottom: 6px !important;
+        line-height: 1.2;
+    }}
+    .badge-container {{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }}
+    .badge-role {{
+        background-color: #1a4f78;
+        color: #e0f2fe;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 600;
+    }}
     </style>
     """, unsafe_allow_html=True)
+
+def gerar_html_card(subtitle_1, subtitle_2, roles, data_str=""):
+    """Gera o HTML do card customizado ao invés de usar a tabela nativa do Streamlit."""
+    
+    lista_html = ""
+    for r in roles:
+        lista_html += r
+        
+    data_html = f"<div style='color: var(--text-color); opacity: 0.6; font-size: 0.85rem; font-weight: 600; text-align: right;'>{data_str}</div>" if data_str else ""
+        
+    html = f'''
+    <div style="padding-bottom: 15px; margin-top: -5px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div>
+                <p class="card-subtitle">{subtitle_1}</p>
+                <p class="card-subtitle">{subtitle_2}</p>
+            </div>
+            {data_html}
+        </div>
+        <div style="margin-top: 20px;">
+            {lista_html}
+        </div>
+    </div>
+    '''
+    return html
 
 st.title("📋 Painel de Aprovadores")
 
@@ -60,11 +139,46 @@ def carregar_dados(arquivo, data_modificacao):
         df_base_cc = pd.read_excel(arquivo, sheet_name='Plan2', dtype=str)
         df_empresas = pd.read_excel(arquivo, sheet_name='Base', dtype=str)
         
+        # Detecta e carrega a aba Form com flexibilidade
         try:
-            df_form = pd.read_excel(arquivo, sheet_name='Form', dtype=str)
-            df_form.columns = df_form.columns.str.strip().str.upper()
+            xls = pd.ExcelFile(arquivo)
+            
+            # Procura exatamente pela aba "Form" (ignora variações de espaço/case)
+            sheet_form = None
+            for sheet in xls.sheet_names:
+                if sheet.strip().upper() == 'FORM':
+                    sheet_form = sheet
+                    break
+            
+            # Se não achar exato, procura qualquer aba que contenha "FORM"
+            if sheet_form is None:
+                for sheet in xls.sheet_names:
+                    if 'FORM' in sheet.strip().upper():
+                        sheet_form = sheet
+                        break
+            
+            if sheet_form:
+                df_form = pd.read_excel(arquivo, sheet_name=sheet_form, dtype=str)
+                df_form.columns = df_form.columns.str.strip().str.upper()
+                
+                # Remove apenas linhas completamente vazias (todos os valores são NaN ou string vazia)
+                df_form = df_form.dropna(how='all')
+                df_form = df_form[~df_form.astype(str).apply(lambda x: (x.str.strip() == '').all(), axis=1)]
+                
+                # Remove linhas onde todos os valores são "nan" ou "NAN"
+                df_form = df_form[~df_form.astype(str).apply(lambda x: (x.str.strip().str.upper() == 'NAN').all(), axis=1)]
+                
+                if 'C CUSTO' in df_form.columns:
+                    df_form['C CUSTO'] = df_form['C CUSTO'].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+            else:
+                df_form = pd.DataFrame()
+        except Exception as e:
+            df_form = pd.DataFrame()
+
             if 'C CUSTO' in df_form.columns:
-                df_form['C CUSTO'] = df_form['C CUSTO'].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+                    df_form['C CUSTO'] = df_form['C CUSTO'].astype(str).str.strip().str.replace(r'\.0$', '', regex=True)
+            else:
+                df_form = pd.DataFrame()
         except:
             df_form = pd.DataFrame()
 
@@ -391,7 +505,21 @@ if tipo_visao == "Protheus":
    # Dividi em colunas pra o botão ficar alinhado com o título, senão fica uma zona
     col_tit, col_btn = st.columns([3, 1])
     with col_tit:
-        st.write(f"### 🏢 Hierarquia Protheus ({len(chaves_filtradas)} resultados)")
+        try:
+            total_b = len(df_regras['CHAVE_UNICA'].unique())
+        except:
+            total_b = len(df_regras)
+        st.markdown(f"""
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; margin-top:20px;">
+            <h3 style="margin:0; padding:0; color:var(--text-color); font-weight: bold; border-left: 4px solid #0068C9; padding-left: 10px;">🏢 Explorador Protheus</h3>
+            <div style="display: flex; gap: 24px; text-align: center; font-size: 0.8rem; font-weight: 800; color: var(--text-color); opacity: 0.7;">
+                <div>TOTAL<br><span style="color:var(--text-color); font-size:1.1rem; opacity: 1;">{total_b}</span></div>
+                <div>VISÍVEIS<br><span style="color:var(--text-color); font-size:1.1rem; opacity: 1;">{len(chaves_filtradas)}</span></div>
+                <div>STATUS<br><span style="color:#2ecc71; font-size:1.1rem; opacity: 1;">Ativo</span></div>
+            </div>
+        </div>
+        <hr style="margin-top: 5px; border-color: var(--secondary-background-color); border-width: 1px;">
+        """, unsafe_allow_html=True)
 
     if len(chaves_filtradas) == 0:
         st.warning("Nenhum resultado encontrado com esses filtros.")
@@ -458,48 +586,83 @@ if tipo_visao == "Protheus":
             icone_grupo = "🟢" if status_cc in ["2", "ATIVO"] else "🔴"
             alerta_cc = " ⚠️ [CC BLOQUEADO]" if status_cc in ["1", "BLOQUEADO", "INATIVO"] else ""
         
-            # Monta o título exatamente com os dados da Plan1 + Descrição da Plan2
-            titulo_expander = f"{icone_grupo} {emp_fmt} - {fil_fmt} - {cc_fmt} - {desc_final}{alerta_cc}{espaco_hack}"
+            # Monta o título e os subtitulos para o HTML
+            titulo_card = f"{cc_fmt} - {desc_final.upper()}"
+            sub_1 = f"Centro de Custo: {emp_fmt} | {fil_fmt} | {cc_fmt}"
+            
+            # Buscar sub_2 que é o "Grupo Resp"
+            col_grupo = 'AL_DESC' if 'AL_DESC' in dados_cc.columns else 'NOME GRUPO'
+            nome_grupo = str(dados_cc[col_grupo].iloc[0]).strip() if col_grupo in dados_cc.columns else "N/A"
+            sub_2 = f"Grupo de Usuários: {nome_grupo}"
+            
+            # Formata a data de atualização
+            data_str = "ATUALIZADO: " + (data_formatada.split(' ')[0] if 'data_formatada' in globals() else "AGORA")
+            
+            # Extrair os aprovadores do loop de linhas agrupando nas badges
+            roles = []
+            col_nome_aprovador = 'AK_NOME' if 'AK_NOME' in dados_cc.columns else 'NOME APROVADOR'
+            col_perfil = 'DHL_DESCRI' if 'DHL_DESCRI' in dados_cc.columns else 'Perfil'
+            
+            dados_cc_sorted = dados_cc.copy()
+            col_nivel = 'AL_NIVEL' if 'AL_NIVEL' in dados_cc_sorted.columns else 'NIVEL APROV'
+            if col_nivel in dados_cc_sorted.columns:
+                dados_cc_sorted = dados_cc_sorted.sort_values(by=col_nivel, ascending=True)
 
+            for i, (_, row_usr) in enumerate(dados_cc_sorted.iterrows(), 1):
+                cargo = str(row_usr.get(col_perfil, 'Aprovador')).strip()
+                nome = str(row_usr.get(col_nome_aprovador, '')).strip()
+                nivel = str(row_usr.get(col_nivel, '')).strip()
+                
+                # Puxa o AL_TPLIBER se existir
+                col_tpliber = 'AL_TPLIBER' if 'AL_TPLIBER' in dados_cc_sorted.columns else None
+                tpliber = str(row_usr.get(col_tpliber, '')).strip() if col_tpliber else ""
+                
+                # Tenta puxar o AL_NIVEL/NIVEL APROV, senão usa a ordem do próprio laço
+                try: 
+                    nivel_num = int(float(nivel))
+                    nivel_prefixo = f"{nivel_num}º Aprovador"
+                except:
+                    nivel_prefixo = f"{i}º Aprovador"
+                    
+                if tpliber and tpliber.lower() != 'nan':
+                    nivel_prefixo = f"{nivel_prefixo} - {tpliber.title()}"
+                    
+                nome_formatado = nome.title() if nome and nome.lower() != 'nan' else "Não Definido"
+                cargo_formatado = cargo.title() if cargo.lower() != 'nan' else ""
+                
+                style_caixa = "background-color: rgba(0, 104, 201, 0.1); border: 1px solid rgba(0, 104, 201, 0.4); padding: 12px 16px; border-radius: 8px; width: 280px; height: 95px; display: inline-block; margin-right: 15px; margin-bottom: 15px; vertical-align: top; box-sizing: border-box;"
+                
+                # Monta a caixa (Nível, Nome, Perfil)
+                texto_item = f"<div style='{style_caixa}'><div style='color: #0068C9; font-size: 0.85rem; font-weight: bold; margin-bottom: 4px;'>{nivel_prefixo}</div><div style='color: var(--text-color); font-size: 1.05rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>{nome_formatado}</div>"
+                if cargo_formatado:
+                    texto_item += f"<div style='color: var(--text-color); opacity: 0.7; font-size: 0.85rem; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>{cargo_formatado}</div>"
+                texto_item += "</div>"
+                
+                if cargo.lower() != 'nan':
+                    roles.append(texto_item)
+            
+            # Checagem de status
+            card_ativo = True if status_cc in ["2", "ATIVO"] else False
+
+            # GERA O COMPONENTE HTML CUSTOMIZADO DE VEZ!
+            titulo_expander = f"{icone_grupo} {titulo_card} {alerta_cc}".strip()
+            
             with st.expander(titulo_expander, expanded=st.session_state.expandir_todos):
-                df_exibir = dados_cc.drop(columns=['CHAVE_UNICA', 'CHAVE_VALIDACAO', col_emp_regras, col_filial, col_cc_regras, col_desc_regras], errors='ignore')
-                
-                col_nivel = 'AL_NIVEL' if 'AL_NIVEL' in df_exibir.columns else 'NIVEL APROV'
-                if col_nivel in df_exibir.columns:
-                    df_exibir = df_exibir.sort_values(by=col_nivel, ascending=True)
-                
-                nomes_amigaveis = {
-                    'CTT_BLOQ': 'Status do CC',
-                    'AL_DESC': 'Grupo de Aprovação',
-                    'AL_NIVEL': 'Nível',
-                    'AK_NOME': 'Nome do Aprovador',
-                    'DHL_DESCRI': 'Perfil',
-                    'AL_TPLIBER': 'Tipo Liberação',
-                    'AL_MSBLQL': 'Aprovador Ativo?'
-                }
-                df_exibir = df_exibir.rename(columns=nomes_amigaveis)
-                
-                # Fuzila a coluna indesejada direto na fonte (botei com e sem interrogação pra garantir)
-                df_exibir = df_exibir.drop(columns=['GRUPO BLOQ?', 'GRUPO BLOQ'], errors='ignore')
-                
-                def pintar_bloqueado(valor):
-                    if valor == 'BLOQUEADO':
-                        return 'background-color: rgba(204, 153, 0, 0.4); color: white;'
-                    return ''
-                
-                if 'Status do CC' in df_exibir.columns:
-                    df_estilizado = df_exibir.style.map(pintar_bloqueado, subset=['Status do CC'])
-                else:
-                    df_estilizado = df_exibir
-                
-                st.dataframe(df_estilizado, hide_index=True, width="stretch")
+                html_final = gerar_html_card(sub_1, sub_2, roles, data_str)
+                st.markdown(html_final, unsafe_allow_html=True)
 # ==============================================================================
 # --- LÓGICA FLUIG CORRIGIDA
 # ==============================================================================
 elif tipo_visao == "Fluig":
     
     if df_form is None or df_form.empty:
-        st.warning("A aba 'Form' não foi encontrada ou está vazia na planilha. Vai dar uma olhada nisso.")
+        st.warning("A aba 'Form' não foi encontrada ou está vazia na planilha.")
+        try:
+            xls_debug = pd.ExcelFile(arquivo_unico)
+            abas_disponiveis = xls_debug.sheet_names
+            st.info(f"**Abas disponíveis no arquivo:** {', '.join(abas_disponiveis)}")
+        except:
+            pass
     else:
         # --- BLINDAGEM CONTRA KEYERROR ---
         # Procura a coluna de custo mesmo que o nome esteja sutilmente diferente (espaço vs underline)
@@ -636,7 +799,7 @@ elif tipo_visao == "Fluig":
             df_form_filtrado = df_form_filtrado[df_form_filtrado['GRUPO USUARIOS'].str.contains(busca_grp_usu_fluig, case=False, na=False)]
             
         if busca_aprovador_fluig:
-            cols_aprovadores = ['ENCARREGADO', 'ENGENHEIRO', 'RH LOCAL', 'SUPERINTENDENTE', 'DIRETOR', 'CONT MANUT']
+            cols_aprovadores = ['ENCARREGADO', 'ENGENHEIRO', 'SUPERINTENDENTE', 'DIRETOR', 'RH LOCAL', 'CONT MANUT']
             cols_existentes_aprov = [c for c in cols_aprovadores if c in df_form_filtrado.columns]
             
             if cols_existentes_aprov:
@@ -649,7 +812,21 @@ elif tipo_visao == "Fluig":
         
         col_tit_f, col_btn_f = st.columns([3, 1])
         with col_tit_f:
-            st.write(f"### 📝 Formulários Fluig ({len(ccs_fluig)} resultados)")
+            try:
+                total_f = len(df_form['CC_CLEAN'].unique())
+            except:
+                total_f = len(df_form)
+            st.markdown(f"""
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; margin-top:20px;">
+                <h3 style="margin:0; padding:0; color:var(--text-color); font-weight: bold; border-left: 4px solid #e74c3c; padding-left: 10px;">📝 Explorador Fluig</h3>
+                <div style="display: flex; gap: 24px; text-align: center; font-size: 0.8rem; font-weight: 800; color: var(--text-color); opacity: 0.7;">
+                    <div>TOTAL FLUIG<br><span style="color:var(--text-color); font-size:1.1rem; opacity: 1;">{total_f}</span></div>
+                    <div>VISÍVEIS<br><span style="color:var(--text-color); font-size:1.1rem; opacity: 1;">{len(ccs_fluig)}</span></div>
+                    <div>STATUS<br><span style="color:#2ecc71; font-size:1.1rem; opacity: 1;">Ativo</span></div>
+                </div>
+            </div>
+            <hr style="margin-top: 5px; border-color: var(--secondary-background-color); border-width: 1px;">
+            """, unsafe_allow_html=True)
         
         if len(ccs_fluig) == 0:
             st.warning("Nenhum resultado encontrado no Fluig com esses filtros.")
@@ -671,21 +848,66 @@ elif tipo_visao == "Fluig":
                     use_container_width=True
                 )
             for cc in ccs_fluig:
-                dados_cc_fluig = df_form_filtrado[df_form_filtrado['C CUSTO'] == cc]
+                if pd.isna(cc):
+                    dados_cc_fluig = df_form_filtrado[df_form_filtrado['C CUSTO'].isna()]
+                else:
+                    dados_cc_fluig = df_form_filtrado[df_form_filtrado['C CUSTO'] == cc]
+                
+                if dados_cc_fluig.empty:
+                    continue
                 
                 # Trava de segurança contra o seu KeyError:
                 if col_desc_mestre in dados_cc_fluig.columns:
-                    desc_cc = dados_cc_fluig[col_desc_mestre].iloc[0] if pd.notna(dados_cc_fluig[col_desc_mestre].iloc[0]) else "Sem descrição"
+                    valor_desc = dados_cc_fluig[col_desc_mestre].iloc[0]
+                    desc_cc = valor_desc if pd.notna(valor_desc) else "Sem descrição"
                 else:
                     desc_cc = "Sem descrição"
                 
-                titulo = f"📝 {cc} - {desc_cc}{espaco_hack}"
+                titulo_card = f"{cc} - {desc_cc.upper()}"
                 
-                with st.expander(titulo, expanded=st.session_state.expandir_todos):
-                    colunas_padrao = ['EDICAO FORM', 'C CUSTO', 'SECAO', 'GRUPO USUARIOS', 'GRUPO', 'ENCARREGADO', 'RH LOCAL', 'ENGENHEIRO', 'SUPERINTENDENTE', 'DIRETOR', 'CONT MANUT']
-                    colunas_exibir = [col for col in colunas_padrao if col in dados_cc_fluig.columns]
-                    
-                    if colunas_exibir:
-                        st.dataframe(dados_cc_fluig[colunas_exibir], hide_index=True, width="stretch")
-                    else:
-                        st.dataframe(dados_cc_fluig, hide_index=True, width="stretch")
+                secao_x = str(dados_cc_fluig['SECAO'].iloc[0]).strip() if 'SECAO' in dados_cc_fluig.columns else "N/A"
+                secao_x = "Não Informado" if secao_x.lower() == 'nan' else secao_x
+                sub_1 = f"Centro de Custo: {cc} | Seção RM: {secao_x}"
+                
+                grupo_x = str(dados_cc_fluig['GRUPO USUARIOS'].iloc[0]).strip() if 'GRUPO USUARIOS' in dados_cc_fluig.columns else "Padrão"
+                sub_2 = f"Grupo de Usuários: {grupo_x}"
+                
+                # Pega as datas de criação e edição
+                datas_info = []
+                
+                if 'CRIACAO FORM' in dados_cc_fluig.columns:
+                    val_criacao = str(dados_cc_fluig['CRIACAO FORM'].iloc[0]).strip()
+                    if val_criacao and val_criacao.lower() != 'nan':
+                        datas_info.append(f"CRIADO: {val_criacao}")
+                        
+                if 'EDICAO FORM' in dados_cc_fluig.columns:
+                    val_edicao = str(dados_cc_fluig['EDICAO FORM'].iloc[0]).strip()
+                    if val_edicao and val_edicao.lower() != 'nan':
+                        datas_info.append(f"EDITADO: {val_edicao}")
+                
+                if not datas_info:
+                    data_str = "ATUALIZADO: " + (data_formatada.split(' ')[0] if 'data_formatada' in globals() else "AGORA")
+                else:
+                    data_str = "<br>".join(datas_info)
+                
+                cargos_mapeados = ['ENCARREGADO', 'ENGENHEIRO', 'SUPERINTENDENTE', 'DIRETOR', 'RH LOCAL', 'CONT MANUT']
+                aprovadores_encontrados = []
+                for c_cargo in cargos_mapeados:
+                    if c_cargo in dados_cc_fluig.columns:
+                        nome_resp = str(dados_cc_fluig[c_cargo].iloc[0]).strip()
+                        if nome_resp and nome_resp.lower() != 'nan':
+                            aprovadores_encontrados.append((c_cargo.title(), nome_resp.title()))
+                            
+                titulo_expander = f"📝 {titulo_card}"
+                with st.expander(titulo_expander, expanded=st.session_state.expandir_todos):
+                    html_caixas = ""
+                    for cargo, nome_resp in aprovadores_encontrados:
+                        # Caixa de tamanho fixo, vermelha e transparente
+                        style_caixa = "background-color: rgba(255, 75, 75, 0.1); border: 1px solid rgba(255, 75, 75, 0.4); padding: 12px 16px; border-radius: 8px; width: 250px; height: 85px; display: inline-block; margin-right: 15px; margin-bottom: 15px; vertical-align: top; box-sizing: border-box;"
+                        html_caixas += f"<div style='{style_caixa}'><div style='color: {cor_primaria}; font-size: 0.85rem; font-weight: bold; margin-bottom: 4px;'>{cargo.upper()}</div><div style='color: var(--text-color); font-size: 1.05rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>{nome_resp}</div></div>"
+                        
+                    if not aprovadores_encontrados:
+                        html_caixas = "<div style='color: #a0aab2; font-style: italic;'>Nenhum aprovador encontrado.</div>"
+                        
+                    html_final = f"<div style='padding-bottom: 15px; margin-top: -5px;'><div style='display: flex; justify-content: space-between; align-items: flex-start;'><div><p class='card-subtitle'>{sub_1}</p><p class='card-subtitle'>{sub_2}</p></div><div style='color: var(--text-color); opacity: 0.6; font-size: 0.85rem; font-weight: 600; text-align: right;'>{data_str}</div></div><div style='margin-top: 20px;'>{html_caixas}</div></div>"
+                    st.markdown(html_final, unsafe_allow_html=True)

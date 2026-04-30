@@ -93,6 +93,16 @@ def modal_novo_registro():
         obs = st.text_input("Observação", key="obs_input")
 
         st.write("---")
+        
+        # --- NOVOS CHECKBOXES ---
+        col_chk1, col_chk2 = st.columns(2)
+        with col_chk1:
+            auth_pagamento = st.checkbox("Possui autorização de pagamento?", key="chk_auth")
+        with col_chk2:
+            fornecedor_novo = st.checkbox("É um fornecedor novo?", key="chk_novo")
+
+        st.write("---")
+        
         # --- CAMPO DE SENHA AQUI ---
         senha_validacao = st.text_input("🔑 Senha de Autorização para Salvar", type="password", key="senha_val")
 
@@ -105,15 +115,17 @@ def modal_novo_registro():
                 st.rerun()
 
         if submit:
-            # --- VALIDAÇÃO DA SENHA AQUI ---
+            # --- VALIDAÇÃO DA SENHA E REGRAS DE NEGÓCIO ---
             if senha_validacao != "QSMS2026":
                 st.error("Senha incorreta! Você não tem autorização para salvar esta atualização.")
+            elif auth_pagamento and not obs.strip():
+                st.warning("Como possui autorização de pagamento, o campo 'Observação' é obrigatório!")
             else:
                 codigo_final = st.session_state.codigo_input
                 loja_final = st.session_state.loja_input
 
                 if not codigo_final or not loja_final or not razao_social:
-                    st.warning("Preenche o Código, a Loja e a Razão Social para registrar na planilha!")
+                    st.warning("Preencha o Código, a Loja e a Razão Social para registrar na planilha!")
                 else:
                     try:
                         wb = openpyxl.load_workbook(FILE_PATH)
@@ -125,6 +137,10 @@ def modal_novo_registro():
                                 next_row = r + 1
                                 break
 
+                        # Tratamento de Sim/Não para as novas colunas
+                        val_auth = "Sim" if auth_pagamento else "Não"
+                        val_novo = "Sim" if fornecedor_novo else "Não"
+
                         ws.cell(row=next_row, column=1, value=codigo_final)
                         ws.cell(row=next_row, column=2, value=loja_final)
                         ws.cell(row=next_row, column=3, value=razao_social)
@@ -134,6 +150,8 @@ def modal_novo_registro():
                         ws.cell(row=next_row, column=7, value=dados_novos_val)
                         ws.cell(row=next_row, column=8, value=solicitante)
                         ws.cell(row=next_row, column=9, value=obs)
+                        ws.cell(row=next_row, column=10, value=val_auth) # Coluna J
+                        ws.cell(row=next_row, column=11, value=val_novo) # Coluna K
 
                         wb.save(FILE_PATH)
                         
@@ -142,9 +160,9 @@ def modal_novo_registro():
                         st.rerun()
                         
                     except PermissionError:
-                        st.error("FECHA O EXCEL ANTES DE SALVAR, CACETE!")
+                        st.error("O arquivo Excel está aberto. Feche-o antes de salvar.")
                     except Exception as e:
-                        st.error(f"Deu erro: {e}")
+                        st.error(f"Erro ao salvar: {e}")
 
 # --- TELA PRINCIPAL ---
 def main():

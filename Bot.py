@@ -53,7 +53,7 @@ def executar_bot():
         {"arquivo_sql": "Consult_Aprovadores.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Plan1"},
         {"arquivo_sql": "Consult_Roncador.sql", "arquivo_saida": "Roncador.xlsx", "aba": "Plan1"},
         {"arquivo_sql": "Consult_C.Custo.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Plan2"},
-        {"arquivo_sql": "Consult_Form.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "Form"}
+        {"arquivo_sql": "Consult_Form.sql", "arquivo_saida": "Aprovadores.xlsx", "aba": "FORM"}
     ]
     
     gravar_log("--- INICIANDO EXECUÇÃO DO BOT ---")
